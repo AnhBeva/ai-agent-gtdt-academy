@@ -1,0 +1,4583 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Agent: Bounded Autonomy Academy</title>
+  <meta name="description" content="Webpage đào tạo AI Agent Bounded Autonomy cho Dev, Tech Lead và R&D.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="AI Agent Academy">
+      <span class="brand-mark">⌁</span>
+      <span><strong>AI Agent Academy</strong><small>Bounded Autonomy</small></span>
+    </a>
+    <nav class="topnav" aria-label="Điều hướng chính">
+      <a href="#academy-giao-trinh-dao-tao-ai-agent-bounded-autonomy-cho-dev-tech-lead">Academy</a>
+      <a href="#academy-5-case-study">Case Studies</a>
+      <a href="#academy-7-bo-workshop-thuc-hanh">Workshop</a>
+      <a href="#templates-section">Templates</a>
+      <a href="#academy-13-lo-trinh-ap-dung-sau-dao-tao-30-60-90-ngay">Roadmap</a>
+    </nav>
+    <div class="top-actions">
+      <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Tìm kiếm nội dung"></label>
+      <button class="icon-btn" id="printBtn" type="button">In/PDF</button>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false">Mục lục</button>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar" aria-label="Mục lục">
+    <div class="sidebar-head">
+      <strong>Nội dung</strong>
+      <span id="readPercent">0%</span>
+    </div>
+    <div class="toc"><a class="toc-link toc-h1" href="#academy-giao-trinh-dao-tao-ai-agent-bounded-autonomy-cho-dev-tech-lead" data-target="academy-giao-trinh-dao-tao-ai-agent-bounded-autonomy-cho-dev-tech-lead" data-source="academy"><span>Giáo Trình Đào Tạo: AI Agent - Bounded Autonomy Cho Dev/Tech Lead</span></a>
+<a class="toc-link toc-h2" href="#academy-1-tuyen-bo-muc-tieu-dao-tao" data-target="academy-1-tuyen-bo-muc-tieu-dao-tao" data-source="academy"><span>1. Tuyên Bố Mục Tiêu Đào Tạo</span></a>
+<a class="toc-link toc-h2" href="#academy-2-khung-nang-luc-dau-ra" data-target="academy-2-khung-nang-luc-dau-ra" data-source="academy"><span>2. Khung Năng Lực Đầu Ra</span></a>
+<a class="toc-link toc-h2" href="#academy-3-lo-trinh-dao-tao-tong-the" data-target="academy-3-lo-trinh-dao-tao-tong-the" data-source="academy"><span>3. Lộ Trình Đào Tạo Tổng Thể</span></a>
+<a class="toc-link toc-h2" href="#academy-4-chi-tiet-tung-bai-hoc" data-target="academy-4-chi-tiet-tung-bai-hoc" data-source="academy"><span>4. Chi Tiết Từng Bài Học</span></a>
+<a class="toc-link toc-h2" href="#academy-5-case-study" data-target="academy-5-case-study" data-source="academy"><span>5. Case Study</span></a>
+<a class="toc-link toc-h2" href="#academy-6-bo-cau-hoi-tu-duy-theo-bloom-s-taxonomy" data-target="academy-6-bo-cau-hoi-tu-duy-theo-bloom-s-taxonomy" data-source="academy"><span>6. Bộ Câu Hỏi Tư Duy Theo Bloom&#x27;s Taxonomy</span></a>
+<a class="toc-link toc-h2" href="#academy-7-bo-workshop-thuc-hanh" data-target="academy-7-bo-workshop-thuc-hanh" data-source="academy"><span>7. Bộ Workshop Thực Hành</span></a>
+<a class="toc-link toc-h2" href="#academy-8-bo-template-dung-ngay" data-target="academy-8-bo-template-dung-ngay" data-source="academy"><span>8. Bộ Template Dùng Ngay</span></a>
+<a class="toc-link toc-h2" href="#academy-9-bo-danh-gia-nang-luc-100-diem" data-target="academy-9-bo-danh-gia-nang-luc-100-diem" data-source="academy"><span>9. Bộ Đánh Giá Năng Lực 100 Điểm</span></a>
+<a class="toc-link toc-h2" href="#academy-10-kpi-danh-gia-hieu-qua-dao-tao-theo-kirkpatrick" data-target="academy-10-kpi-danh-gia-hieu-qua-dao-tao-theo-kirkpatrick" data-source="academy"><span>10. KPI Đánh Giá Hiệu Quả Đào Tạo Theo Kirkpatrick</span></a>
+<a class="toc-link toc-h2" href="#academy-11-so-tay-hoc-vien" data-target="academy-11-so-tay-hoc-vien" data-source="academy"><span>11. Sổ Tay Học Viên</span></a>
+<a class="toc-link toc-h2" href="#academy-12-cheat-sheet-1-trang" data-target="academy-12-cheat-sheet-1-trang" data-source="academy"><span>12. Cheat Sheet 1 Trang</span></a>
+<a class="toc-link toc-h2" href="#academy-13-lo-trinh-ap-dung-sau-dao-tao-30-60-90-ngay" data-target="academy-13-lo-trinh-ap-dung-sau-dao-tao-30-60-90-ngay" data-source="academy"><span>13. Lộ Trình Áp Dụng Sau Đào Tạo 30-60-90 Ngày</span></a>
+<a class="toc-link toc-h2" href="#academy-phu-luc-a-lich-trinh-2-ngay-goi-y" data-target="academy-phu-luc-a-lich-trinh-2-ngay-goi-y" data-source="academy"><span>Phụ Lục A. Lịch Trình 2 Ngày Gợi Ý</span></a>
+<a class="toc-link toc-h2" href="#academy-phu-luc-b-trainer-checklist" data-target="academy-phu-luc-b-trainer-checklist" data-source="academy"><span>Phụ Lục B. Trainer Checklist</span></a>
+<a class="toc-link toc-h2" href="#academy-phu-luc-c-mapping-noi-dung-pdf-sang-giao-trinh" data-target="academy-phu-luc-c-mapping-noi-dung-pdf-sang-giao-trinh" data-source="academy"><span>Phụ Lục C. Mapping Nội Dung PDF Sang Giáo Trình</span></a>
+<a class="toc-link toc-h1" href="#goal-goal-md-hop-dong-muc-tieu-cho-ai-agent" data-target="goal-goal-md-hop-dong-muc-tieu-cho-ai-agent" data-source="goal"><span>GOAL.md - Hợp Đồng Mục Tiêu Cho AI Agent</span></a>
+<a class="toc-link toc-h2" href="#goal-1-ban-chat" data-target="goal-1-ban-chat" data-source="goal"><span>1. Bản Chất</span></a>
+<a class="toc-link toc-h2" href="#goal-2-khi-nao-can-dung" data-target="goal-2-khi-nao-can-dung" data-source="goal"><span>2. Khi Nào Cần Dùng</span></a>
+<a class="toc-link toc-h2" href="#goal-3-phuong-phap-viet-objective" data-target="goal-3-phuong-phap-viet-objective" data-source="goal"><span>3. Phương Pháp Viết Objective</span></a>
+<a class="toc-link toc-h2" href="#goal-4-scope-va-locked-files" data-target="goal-4-scope-va-locked-files" data-source="goal"><span>4. Scope Và Locked Files</span></a>
+<a class="toc-link toc-h2" href="#goal-5-definition-of-done" data-target="goal-5-definition-of-done" data-source="goal"><span>5. Definition Of Done</span></a>
+<a class="toc-link toc-h2" href="#goal-6-validation-commands" data-target="goal-6-validation-commands" data-source="goal"><span>6. Validation Commands</span></a>
+<a class="toc-link toc-h2" href="#goal-7-evidence" data-target="goal-7-evidence" data-source="goal"><span>7. Evidence</span></a>
+<a class="toc-link toc-h2" href="#goal-8-template-copy-ready" data-target="goal-8-template-copy-ready" data-source="goal"><span>8. Template Copy-Ready</span></a>
+<a class="toc-link toc-h2" href="#goal-9-vi-du-ap-dung" data-target="goal-9-vi-du-ap-dung" data-source="goal"><span>9. Ví Dụ Áp Dụng</span></a>
+<a class="toc-link toc-h2" href="#goal-10-rubric-danh-gia-goal-md" data-target="goal-10-rubric-danh-gia-goal-md" data-source="goal"><span>10. Rubric Đánh Giá GOAL.md</span></a>
+<a class="toc-link toc-h1" href="#workflow-workflow-md-quy-trinh-dieu-phoi-ai-agent-tuyen-tinh" data-target="workflow-workflow-md-quy-trinh-dieu-phoi-ai-agent-tuyen-tinh" data-source="workflow"><span>WORKFLOW.md - Quy Trình Điều Phối AI Agent Tuyến Tính</span></a>
+<a class="toc-link toc-h2" href="#workflow-1-ban-chat" data-target="workflow-1-ban-chat" data-source="workflow"><span>1. Bản Chất</span></a>
+<a class="toc-link toc-h2" href="#workflow-2-role-sequence" data-target="workflow-2-role-sequence" data-source="workflow"><span>2. Role Sequence</span></a>
+<a class="toc-link toc-h2" href="#workflow-3-handoff-rule" data-target="workflow-3-handoff-rule" data-source="workflow"><span>3. Handoff Rule</span></a>
+<a class="toc-link toc-h2" href="#workflow-4-fail-back-rule" data-target="workflow-4-fail-back-rule" data-source="workflow"><span>4. Fail-Back Rule</span></a>
+<a class="toc-link toc-h2" href="#workflow-5-review-checklist" data-target="workflow-5-review-checklist" data-source="workflow"><span>5. Review Checklist</span></a>
+<a class="toc-link toc-h2" href="#workflow-6-template-copy-ready" data-target="workflow-6-template-copy-ready" data-source="workflow"><span>6. Template Copy-Ready</span></a>
+<a class="toc-link toc-h2" href="#workflow-7-vi-du-workflow-cho-ui-visual-fix" data-target="workflow-7-vi-du-workflow-cho-ui-visual-fix" data-source="workflow"><span>7. Ví Dụ Workflow Cho UI Visual Fix</span></a>
+<a class="toc-link toc-h2" href="#workflow-8-dau-hieu-workflow-yeu" data-target="workflow-8-dau-hieu-workflow-yeu" data-source="workflow"><span>8. Dấu Hiệu Workflow Yếu</span></a>
+<a class="toc-link toc-h2" href="#workflow-9-tieu-chuan-workflow-xuat-sac" data-target="workflow-9-tieu-chuan-workflow-xuat-sac" data-source="workflow"><span>9. Tiêu Chuẩn Workflow Xuất Sắc</span></a>
+<a class="toc-link toc-h1" href="#qa-gate-qa-gate-checklist-cong-kiem-chung-chat-luong-cho-ai-agent" data-target="qa-gate-qa-gate-checklist-cong-kiem-chung-chat-luong-cho-ai-agent" data-source="qa-gate"><span>QA Gate Checklist - Cổng Kiểm Chứng Chất Lượng Cho AI Agent</span></a>
+<a class="toc-link toc-h2" href="#qa-gate-1-ban-chat" data-target="qa-gate-1-ban-chat" data-source="qa-gate"><span>1. Bản Chất</span></a>
+<a class="toc-link toc-h2" href="#qa-gate-2-cac-loai-gate-chinh" data-target="qa-gate-2-cac-loai-gate-chinh" data-source="qa-gate"><span>2. Các Loại Gate Chính</span></a>
+<a class="toc-link toc-h2" href="#qa-gate-3-phuong-phap-chon-gate" data-target="qa-gate-3-phuong-phap-chon-gate" data-source="qa-gate"><span>3. Phương Pháp Chọn Gate</span></a>
+<a class="toc-link toc-h2" href="#qa-gate-4-compile-build-gate" data-target="qa-gate-4-compile-build-gate" data-source="qa-gate"><span>4. Compile/Build Gate</span></a>
+<a class="toc-link toc-h2" href="#qa-gate-5-unit-test-gate" data-target="qa-gate-5-unit-test-gate" data-source="qa-gate"><span>5. Unit Test Gate</span></a>
+<a class="toc-link toc-h2" href="#qa-gate-6-lint-typecheck-gate" data-target="qa-gate-6-lint-typecheck-gate" data-source="qa-gate"><span>6. Lint/Typecheck Gate</span></a>
+<a class="toc-link toc-h2" href="#qa-gate-7-visual-screenshot-gate" data-target="qa-gate-7-visual-screenshot-gate" data-source="qa-gate"><span>7. Visual Screenshot Gate</span></a>
+<a class="toc-link toc-h2" href="#qa-gate-8-benchmark-gate" data-target="qa-gate-8-benchmark-gate" data-source="qa-gate"><span>8. Benchmark Gate</span></a>
+<a class="toc-link toc-h2" href="#qa-gate-9-security-check-gate" data-target="qa-gate-9-security-check-gate" data-source="qa-gate"><span>9. Security Check Gate</span></a>
+<a class="toc-link toc-h2" href="#qa-gate-10-qa-gate-template" data-target="qa-gate-10-qa-gate-template" data-source="qa-gate"><span>10. QA Gate Template</span></a>
+<a class="toc-link toc-h2" href="#qa-gate-11-tieu-chuan-pass" data-target="qa-gate-11-tieu-chuan-pass" data-source="qa-gate"><span>11. Tiêu Chuẩn Pass</span></a>
+<a class="toc-link toc-h1" href="#sol-sol-worksheet-speed-of-light-optimization" data-target="sol-sol-worksheet-speed-of-light-optimization" data-source="sol"><span>SOL Worksheet - Speed Of Light Optimization</span></a>
+<a class="toc-link toc-h2" href="#sol-1-ban-chat" data-target="sol-1-ban-chat" data-source="sol"><span>1. Bản Chất</span></a>
+<a class="toc-link toc-h2" href="#sol-2-khi-nao-dung-sol-worksheet" data-target="sol-2-khi-nao-dung-sol-worksheet" data-source="sol"><span>2. Khi Nào Dùng SOL Worksheet</span></a>
+<a class="toc-link toc-h2" href="#sol-3-ba-loai-bound-chinh" data-target="sol-3-ba-loai-bound-chinh" data-source="sol"><span>3. Ba Loại Bound Chính</span></a>
+<a class="toc-link toc-h2" href="#sol-4-phuong-phap-xac-dinh-bottleneck" data-target="sol-4-phuong-phap-xac-dinh-bottleneck" data-source="sol"><span>4. Phương Pháp Xác Định Bottleneck</span></a>
+<a class="toc-link toc-h2" href="#sol-5-current-performance" data-target="sol-5-current-performance" data-source="sol"><span>5. Current Performance</span></a>
+<a class="toc-link toc-h2" href="#sol-6-optimization-target" data-target="sol-6-optimization-target" data-source="sol"><span>6. Optimization Target</span></a>
+<a class="toc-link toc-h2" href="#sol-7-sol-worksheet-template" data-target="sol-7-sol-worksheet-template" data-source="sol"><span>7. SOL Worksheet Template</span></a>
+<a class="toc-link toc-h2" href="#sol-8-vi-du-vad-realtime-30ms" data-target="sol-8-vi-du-vad-realtime-30ms" data-source="sol"><span>8. Ví Dụ: VAD Realtime &lt;30ms</span></a>
+<a class="toc-link toc-h2" href="#sol-9-vi-du-iot-database-write-heavy" data-target="sol-9-vi-du-iot-database-write-heavy" data-source="sol"><span>9. Ví Dụ: IoT Database Write-Heavy</span></a>
+<a class="toc-link toc-h2" href="#sol-10-sai-lam-thuong-gap" data-target="sol-10-sai-lam-thuong-gap" data-source="sol"><span>10. Sai Lầm Thường Gặp</span></a>
+<a class="toc-link toc-h2" href="#sol-11-tieu-chuan-worksheet-dat" data-target="sol-11-tieu-chuan-worksheet-dat" data-source="sol"><span>11. Tiêu Chuẩn Worksheet Đạt</span></a>
+<a class="toc-link toc-h1" href="#complexity-agent-task-complexity-matrix-ma-tran-do-phuc-tap-nhiem-vu-ai-agent" data-target="complexity-agent-task-complexity-matrix-ma-tran-do-phuc-tap-nhiem-vu-ai-agent" data-source="complexity"><span>Agent Task Complexity Matrix - Ma Trận Độ Phức Tạp Nhiệm Vụ AI Agent</span></a>
+<a class="toc-link toc-h2" href="#complexity-1-ban-chat" data-target="complexity-1-ban-chat" data-source="complexity"><span>1. Bản Chất</span></a>
+<a class="toc-link toc-h2" href="#complexity-2-hai-truc-danh-gia" data-target="complexity-2-hai-truc-danh-gia" data-source="complexity"><span>2. Hai Trục Đánh Giá</span></a>
+<a class="toc-link toc-h2" href="#complexity-3-ma-tran-chinh" data-target="complexity-3-ma-tran-chinh" data-source="complexity"><span>3. Ma Trận Chính</span></a>
+<a class="toc-link toc-h2" href="#complexity-4-cap-do-tu-tri" data-target="complexity-4-cap-do-tu-tri" data-source="complexity"><span>4. Cấp Độ Tự Trị</span></a>
+<a class="toc-link toc-h2" href="#complexity-5-required-steering" data-target="complexity-5-required-steering" data-source="complexity"><span>5. Required Steering</span></a>
+<a class="toc-link toc-h2" href="#complexity-6-cach-cham-diem-task" data-target="complexity-6-cach-cham-diem-task" data-source="complexity"><span>6. Cách Chấm Điểm Task</span></a>
+<a class="toc-link toc-h2" href="#complexity-7-template-matrix" data-target="complexity-7-template-matrix" data-source="complexity"><span>7. Template Matrix</span></a>
+<a class="toc-link toc-h2" href="#complexity-8-vi-du-cham-diem" data-target="complexity-8-vi-du-cham-diem" data-source="complexity"><span>8. Ví Dụ Chấm Điểm</span></a>
+<a class="toc-link toc-h2" href="#complexity-9-sai-lam-khi-phan-loai" data-target="complexity-9-sai-lam-khi-phan-loai" data-source="complexity"><span>9. Sai Lầm Khi Phân Loại</span></a>
+<a class="toc-link toc-h2" href="#complexity-10-tieu-chuan-quyet-dinh-tot" data-target="complexity-10-tieu-chuan-quyet-dinh-tot" data-source="complexity"><span>10. Tiêu Chuẩn Quyết Định Tốt</span></a>
+<a class="toc-link toc-h1" href="#manager-manager-follow-up-form-theo-doi-ap-dung-ai-agent-sau-dao-tao" data-target="manager-manager-follow-up-form-theo-doi-ap-dung-ai-agent-sau-dao-tao" data-source="manager"><span>Manager Follow-up Form - Theo Dõi Áp Dụng AI Agent Sau Đào Tạo</span></a>
+<a class="toc-link toc-h2" href="#manager-1-ban-chat" data-target="manager-1-ban-chat" data-source="manager"><span>1. Bản Chất</span></a>
+<a class="toc-link toc-h2" href="#manager-2-vai-tro-cua-manager" data-target="manager-2-vai-tro-cua-manager" data-source="manager"><span>2. Vai Trò Của Manager</span></a>
+<a class="toc-link toc-h2" href="#manager-3-evidence-can-theo-doi" data-target="manager-3-evidence-can-theo-doi" data-source="manager"><span>3. Evidence Cần Theo Dõi</span></a>
+<a class="toc-link toc-h2" href="#manager-4-kpi-can-theo-doi" data-target="manager-4-kpi-can-theo-doi" data-source="manager"><span>4. KPI Cần Theo Dõi</span></a>
+<a class="toc-link toc-h2" href="#manager-5-blocker-thuong-gap" data-target="manager-5-blocker-thuong-gap" data-source="manager"><span>5. Blocker Thường Gặp</span></a>
+<a class="toc-link toc-h2" href="#manager-6-next-steering-decision" data-target="manager-6-next-steering-decision" data-source="manager"><span>6. Next Steering Decision</span></a>
+<a class="toc-link toc-h2" href="#manager-7-weekly-follow-up-form" data-target="manager-7-weekly-follow-up-form" data-source="manager"><span>7. Weekly Follow-up Form</span></a>
+<a class="toc-link toc-h2" href="#manager-8-30-60-90-follow-up-cadence" data-target="manager-8-30-60-90-follow-up-cadence" data-source="manager"><span>8. 30-60-90 Follow-up Cadence</span></a>
+<a class="toc-link toc-h2" href="#manager-9-mau-review-30-phut-hang-tuan" data-target="manager-9-mau-review-30-phut-hang-tuan" data-source="manager"><span>9. Mẫu Review 30 Phút Hàng Tuần</span></a>
+<a class="toc-link toc-h2" href="#manager-10-dau-hieu-adoption-dung" data-target="manager-10-dau-hieu-adoption-dung" data-source="manager"><span>10. Dấu Hiệu Adoption Đúng</span></a>
+<a class="toc-link toc-h2" href="#manager-11-dau-hieu-can-can-thiep" data-target="manager-11-dau-hieu-can-can-thiep" data-source="manager"><span>11. Dấu Hiệu Cần Can Thiệp</span></a>
+<a class="toc-link toc-h2" href="#manager-12-manager-scorecard" data-target="manager-12-manager-scorecard" data-source="manager"><span>12. Manager Scorecard</span></a></div>
+    <div class="sidebar-card">
+      <strong>Manifest nguồn</strong>
+      <span>7 file · 2370 dòng Markdown</span>
+    </div>
+  </aside>
+
+  <main id="top" class="page">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>AI Agent:<br>Bounded Autonomy</h1>
+        <p>Thiết kế, xây dựng và vận hành AI Agent tự chủ trong ranh giới. Tập trung vào an toàn, hiệu quả và đo lường được.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#academy-1-tuyen-bo-muc-tieu-dao-tao">Bắt đầu học</a>
+          <a class="secondary-btn" href="#academy-13-lo-trinh-ap-dung-sau-dao-tao-30-60-90-ngay">Xem lộ trình 30-60-90</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Agent boundary diagram">
+        <div class="boundary-box">
+          <div class="cube">AI<br>Agent</div>
+          <span class="node node-top">Mục tiêu</span>
+          <span class="node node-left">Quan sát</span>
+          <span class="node node-right">Hành động</span>
+          <span class="node node-bottom">Ràng buộc</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-grid" aria-label="Tổng quan nội dung">
+      <div><strong>13</strong><span>Phần giáo trình</span></div>
+      <div><strong>7</strong><span>Bài học chuyên sâu</span></div>
+      <div><strong>6</strong><span>Template chuyên sâu</span></div>
+      <div><strong>100</strong><span>Điểm đánh giá</span></div>
+      <div><strong>90</strong><span>Ngày áp dụng</span></div>
+    </section>
+
+    <section class="overview-panel" id="templates-section">
+      <div>
+        <h2>Template Library</h2>
+        <p>6 tài liệu vận hành được tách riêng, trình bày sâu về bản chất, phương pháp, biểu mẫu, ví dụ và tiêu chuẩn đánh giá.</p>
+      </div>
+      <div class="template-grid"><a class="template-card" href="#templates-section" data-jump-source="goal"><strong>GOAL.md</strong><span>Hợp đồng mục tiêu: objective, scope, DoD, validation, evidence.</span></a>
+<a class="template-card" href="#templates-section" data-jump-source="workflow"><strong>WORKFLOW.md</strong><span>Quy trình planner, engineer, reviewer, fail-back và handoff.</span></a>
+<a class="template-card" href="#templates-section" data-jump-source="qa-gate"><strong>QA Gate</strong><span>Cổng kiểm chứng compile, unit, lint, visual, benchmark, security.</span></a>
+<a class="template-card" href="#templates-section" data-jump-source="sol"><strong>SOL Worksheet</strong><span>Tối ưu theo compute/I/O/network bound và trần hiệu năng.</span></a>
+<a class="template-card" href="#templates-section" data-jump-source="complexity"><strong>Complexity Matrix</strong><span>Phân loại task, steering bắt buộc và mức autonomy.</span></a>
+<a class="template-card" href="#templates-section" data-jump-source="manager"><strong>Manager Follow-up</strong><span>Evidence, KPI, blocker và quyết định steering 30-60-90.</span></a></div>
+    </section>
+
+    <section class="source-manifest">
+      <h2>Kiểm kê nội dung nguồn</h2>
+      <p>HTML này được build từ toàn bộ Markdown nguồn, không fetch runtime và không rút gọn nội dung.</p>
+      <div class="table-wrap"><table><thead><tr><th>Tài liệu</th><th>Số dòng</th><th>Đường dẫn</th></tr></thead><tbody><tr><td>Giáo trình tổng</td><td>953</td><td>Giao_trinh_AI_Agent_Bounded_Autonomy.md</td></tr>
+<tr><td>GOAL.md</td><td>267</td><td>templates/GOAL.md</td></tr>
+<tr><td>WORKFLOW.md</td><td>252</td><td>templates/WORKFLOW.md</td></tr>
+<tr><td>QA Gate Checklist</td><td>257</td><td>templates/QA_Gate_Checklist.md</td></tr>
+<tr><td>SOL Worksheet</td><td>235</td><td>templates/SOL_Worksheet.md</td></tr>
+<tr><td>Agent Task Complexity Matrix</td><td>212</td><td>templates/Agent_Task_Complexity_Matrix.md</td></tr>
+<tr><td>Manager Follow-up Form</td><td>194</td><td>templates/Manager_Follow_up_Form.md</td></tr></tbody></table></div>
+    </section>
+
+    <article class="content" id="contentRoot">
+      <section class="doc-section source-academy" id="academy-giao-trinh-dao-tao-ai-agent-bounded-autonomy-cho-dev-tech-lead"><div class="source-label">Giáo trình tổng</div><h1>Giáo Trình Đào Tạo: AI Agent - Bounded Autonomy Cho Dev/Tech Lead</h1>
+<p><strong>Nguồn tham khảo:</strong> <code>AI agent.pdf</code> - AI Agent Story: A Developer&#x27;s Journal with Autonomous Agents.</p>
+<p><strong>Đối tượng:</strong> Dev, Tech Lead, R&amp;D Engineer, Engineering Manager hands-on.</p>
+<p><strong>Ngành áp dụng:</strong> Công ty phần mềm/kỹ thuật có codebase thật, CI/CD, test suite, sản phẩm hoặc hệ thống nội bộ cần tăng tốc phát triển bằng AI agent.</p>
+<p><strong>Thời lượng:</strong> 2 ngày intensive + lộ trình áp dụng 30-60-90 ngày.</p>
+<p><strong>Mục tiêu doanh nghiệp:</strong> Tăng tốc phát triển phần mềm nhưng vẫn kiểm soát chất lượng, giảm hallucination, giảm regression, chuẩn hóa cách team giao việc và kiểm chứng AI agent.</p>
+<hr>
+<h2 id="academy-1-tuyen-bo-muc-tieu-dao-tao">1. Tuyên Bố Mục Tiêu Đào Tạo</h2>
+<h3 id="academy-hoc-vien-se-biet-gi">Học viên sẽ biết gì?</h3>
+<ul>
+<li>Vì sao AI code generation nhanh nhưng dễ làm phình codebase, tạo regression và lặp lỗi nếu thiếu ranh giới kiểm chứng.</li>
+<li>Khác biệt giữa &quot;prompt để sinh code&quot; và &quot;thiết kế hệ thống thực thi tự trị có kiểm soát&quot;.</li>
+<li>Cấu trúc một vòng agent đáng tin cậy: Planner -&gt; Executor -&gt; Reviewer -&gt; Gate -&gt; Evidence.</li>
+<li>Cách dùng sandbox, scope lock, Definition of Done, test gate, visual gate, benchmark gate và SOL target.</li>
+<li>Cách phân loại nhiệm vụ: mainstream task, edge-case task, rare/custom domain task.</li>
+<li>Cách biến yêu cầu mơ hồ thành engineering contract có thể kiểm chứng bằng máy.</li>
+</ul>
+<h3 id="academy-hoc-vien-se-lam-duoc-gi">Học viên sẽ làm được gì?</h3>
+<ul>
+<li>Viết được <code>GOAL.md</code> cho một task AI agent với objective, scope, locked files, DoD, validation command và evidence requirement.</li>
+<li>Thiết kế được workflow tuyến tính có planner, engineer/executor, reviewer và fail-back loop.</li>
+<li>Xây được verification gate cho compile, lint, unit test, integration test, visual QA, benchmark và security review.</li>
+<li>Chia một project phức tạp thành module nhỏ có interface rõ, giúp agent làm trong &quot;hộp&quot; thay vì tự quyết kiến trúc rộng.</li>
+<li>Đo hiệu quả agent bằng dữ liệu: defect rate, cycle count, test pass rate, latency, throughput, lead time, rework rate.</li>
+<li>Chạy một pilot AI-agent workflow trong repo thật và tạo evidence đủ để lead/manager audit.</li>
+</ul>
+<h3 id="academy-sau-khoa-hoc-doanh-nghiep-nhan-duoc-gia-tri-gi">Sau khóa học doanh nghiệp nhận được giá trị gì?</h3>
+<ul>
+<li>Chuẩn vận hành AI agent thống nhất cho team kỹ thuật.</li>
+<li>Giảm thời gian làm boilerplate, test iteration và performance tuning.</li>
+<li>Giảm rủi ro agent sửa lan, hallucinate API, bỏ qua edge case hoặc tự tối ưu sai hướng.</li>
+<li>Tăng khả năng reuse prompt, contract, checklist và QA gate giữa các project.</li>
+<li>Có lộ trình 90 ngày để chuyển từ thử nghiệm cá nhân sang team operating model.</li>
+</ul>
+<hr>
+<h2 id="academy-2-khung-nang-luc-dau-ra">2. Khung Năng Lực Đầu Ra</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Nhóm năng lực</th>
+<th>Năng lực</th>
+<th>Mô tả</th>
+<th>Bằng chứng quan sát được</th>
+<th>Phương pháp đánh giá</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Kiến thức</td>
+<td>Bounded autonomy</td>
+<td>Hiểu tự trị có kiểm soát là thiết kế ranh giới, không phải tin agent mù quáng</td>
+<td>Giải thích được velocity trap, hallucination loop, verification gate</td>
+<td>Post-test, thảo luận case</td>
+</tr>
+<tr>
+<td>Kiến thức</td>
+<td>Verification loop</td>
+<td>Hiểu planner-executor-reviewer, fail-back và evidence-driven audit</td>
+<td>Vẽ được loop cho một task thật trong team</td>
+<td>Bài tập nhóm</td>
+</tr>
+<tr>
+<td>Kiến thức</td>
+<td>Task complexity spectrum</td>
+<td>Phân biệt task phổ biến, task edge-case, task domain hiếm</td>
+<td>Chọn đúng mức steering cho 5 task mẫu</td>
+<td>Scenario quiz</td>
+</tr>
+<tr>
+<td>Kỹ năng</td>
+<td>Goal contract design</td>
+<td>Viết <code>GOAL.md</code> rõ objective, scope, DoD, command, evidence</td>
+<td>Một file goal contract dùng được cho repo thật</td>
+<td>Rubric 100 điểm</td>
+</tr>
+<tr>
+<td>Kỹ năng</td>
+<td>Acceptance gate design</td>
+<td>Thiết kế gate compile/test/visual/benchmark/security</td>
+<td>Checklist gate có command và pass/fail rule</td>
+<td>Peer review</td>
+</tr>
+<tr>
+<td>Kỹ năng</td>
+<td>Modular decomposition</td>
+<td>Chia hệ thống thành module nhỏ với interface chặt</td>
+<td>Module map và interface contract</td>
+<td>Trainer review</td>
+</tr>
+<tr>
+<td>Kỹ năng</td>
+<td>Agent orchestration</td>
+<td>Tổ chức planner, engineer, reviewer theo pipeline tuyến tính</td>
+<td><code>WORKFLOW.md</code> hoặc <code>AGENTS.md</code> mẫu</td>
+<td>Simulation</td>
+</tr>
+<tr>
+<td>Kỹ năng</td>
+<td>Evidence audit</td>
+<td>Thu thập log, screenshot, benchmark, test report</td>
+<td>Evidence pack cho một pilot task</td>
+<td>Applied evaluation</td>
+</tr>
+<tr>
+<td>Tư duy</td>
+<td>Control before speed</td>
+<td>Không đánh đổi kiểm soát lấy tốc độ sinh code</td>
+<td>Biết dừng agent khi thiếu spec hoặc gate</td>
+<td>Role play</td>
+</tr>
+<tr>
+<td>Tư duy</td>
+<td>Process over model</td>
+<td>Ưu tiên process, sandbox, compiler gate hơn việc đổi model liên tục</td>
+<td>Đề xuất governance model phù hợp team</td>
+<td>Case analysis</td>
+</tr>
+<tr>
+<td>Hành vi</td>
+<td>Test before implementation</td>
+<td>Đặt test/spec trước khi agent viết code</td>
+<td>Task plan có test command trước edit</td>
+<td>Observation</td>
+</tr>
+<tr>
+<td>Hành vi</td>
+<td>Escalate unknowns</td>
+<td>Khi agent mắc lỗi lặp, chuyển sang đọc docs, đo đạc, hỏi người phụ trách</td>
+<td>Failure log có decision point</td>
+<td>Simulation</td>
+</tr>
+<tr>
+<td>Kết quả</td>
+<td>Pilot vận hành được</td>
+<td>Chạy một AI-agent workflow nhỏ, có gate và evidence</td>
+<td>1 pilot hoàn tất với pass/fail report</td>
+<td>30 ngày follow-up</td>
+</tr>
+<tr>
+<td>Kết quả</td>
+<td>Năng suất có kiểm soát</td>
+<td>Lead time giảm nhưng defect/rework không tăng</td>
+<td>Dashboard KPI trước/sau</td>
+<td>Kirkpatrick Level 4</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="academy-3-lo-trinh-dao-tao-tong-the">3. Lộ Trình Đào Tạo Tổng Thể</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Module</th>
+<th>Thời lượng</th>
+<th>Mục tiêu</th>
+<th>Nội dung chính</th>
+<th>Đầu ra mong đợi</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>1. Mindset: Từ code generation sang bounded autonomy</td>
+<td>2h</td>
+<td>Nhận diện rủi ro khi dùng AI agent không có boundary</td>
+<td>Software complexity, velocity trap, AI agent vs junior developer, control vs speed</td>
+<td>Bản đồ rủi ro AI agent của team</td>
+</tr>
+<tr>
+<td>2. Knowledge: Verification loop và agent boundary</td>
+<td>3h</td>
+<td>Hiểu cơ chế làm AI agent đáng tin cậy</td>
+<td>Planner-executor-reviewer, mathematical verification loop, sandbox, final gate</td>
+<td>Sơ đồ loop cho một workflow thật</td>
+</tr>
+<tr>
+<td>3. Skill: Viết goal contract và acceptance gate</td>
+<td>3h</td>
+<td>Chuyển yêu cầu thành contract có thể kiểm chứng</td>
+<td><code>GOAL.md</code>, locked scope, DoD, validation command, evidence</td>
+<td>Một <code>GOAL.md</code> hoàn chỉnh</td>
+</tr>
+<tr>
+<td>4. Practice: Orchestrate agent team tuyến tính</td>
+<td>3h</td>
+<td>Thiết kế pipeline đơn giản, dễ audit</td>
+<td><code>WORKFLOW.md</code>, role specialization, handoff, fail-back, reviewer gate</td>
+<td>Workflow planner-engineer-reviewer</td>
+</tr>
+<tr>
+<td>5. Application: Áp dụng vào project thật</td>
+<td>4h</td>
+<td>Chọn pilot và chia module cho agent thực thi</td>
+<td>Modular autonomy, interface contract, test-first, case IoT/DB/VAD/inference</td>
+<td>Pilot plan cho repo/team</td>
+</tr>
+<tr>
+<td>6. Measurement: QA, benchmark, visual gate, SOL</td>
+<td>3h</td>
+<td>Đo chất lượng, tốc độ và giới hạn vật lý</td>
+<td>Compile/lint/test, screenshot gate, benchmark, Speed of Light target</td>
+<td>Rubric đo agent execution</td>
+</tr>
+<tr>
+<td>7. Competency: Chuẩn hóa AI Agent Engineer</td>
+<td>2h</td>
+<td>Chốt chuẩn năng lực và plan 90 ngày</td>
+<td>Competency model, manager follow-up, KPI Kirkpatrick, 30-60-90 plan</td>
+<td>Action plan cá nhân/team</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="academy-4-chi-tiet-tung-bai-hoc">4. Chi Tiết Từng Bài Học</h2>
+<h3 id="academy-bai-1-velocity-trap-vi-sao-ai-sinh-code-nhanh-nhung-de-tao-regression">Bài 1. Velocity Trap: Vì Sao AI Sinh Code Nhanh Nhưng Dễ Tạo Regression?</h3>
+<p><strong>Mục tiêu bài học</strong></p>
+<ul>
+<li>Nhận diện hallucination loop: Error -&gt; Guess -&gt; Fix -&gt; Compile Fail.</li>
+<li>Hiểu vì sao tốc độ không có direction chỉ làm regression nhanh hơn.</li>
+<li>Biết khi nào phải dừng sinh code và chuyển sang đọc docs, đo đạc, kiểm chứng giả định.</li>
+</ul>
+<p><strong>Kiến thức cốt lõi</strong></p>
+<ul>
+<li>AI agent có tốc độ rất cao nhưng shallow recall và dễ bỏ qua edge case.</li>
+<li>Junior developer thường dừng lại hỏi khi mắc kẹt; agent có thể lặp vô hạn nếu không bị chặn.</li>
+<li>&quot;Define success before generating code&quot; là nguyên tắc khởi đầu.</li>
+</ul>
+<p><strong>Nguyên lý First Principles</strong></p>
+<ul>
+<li>Code đúng không được xác định bởi vẻ hợp lý của output, mà bởi contract và evidence.</li>
+<li>Nếu không có tiêu chí pass/fail, không thể phân biệt tiến bộ thật với thay đổi ngẫu nhiên.</li>
+</ul>
+<p class="callout callout-warn"><strong>Sai lầm thường gặp</strong></p>
+<ul>
+<li>Prompt một yêu cầu lớn rồi để agent tự sửa đến khi &quot;có vẻ chạy&quot;.</li>
+<li>Chỉ review diff thủ công, không bắt buộc test hoặc evidence.</li>
+<li>Đổi model khi lỗi nằm ở thiếu boundary, thiếu spec hoặc thiếu dữ liệu kiểm chứng.</li>
+<li>Cho agent quyền sửa toàn repo với mục tiêu mơ hồ.</li>
+</ul>
+<p class="callout callout-good"><strong>Best Practices</strong></p>
+<ul>
+<li>Mỗi task phải có objective, scope, DoD và validation command.</li>
+<li>Khi lỗi lặp hơn 2 vòng, bắt buộc đọc docs/log/spec thay vì đoán.</li>
+<li>Luôn yêu cầu evidence: test output, benchmark, screenshot, log, trace.</li>
+<li>Tách task lớn thành module có interface rõ.</li>
+</ul>
+<p><strong>Checklist áp dụng</strong></p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Câu hỏi</th>
+<th>Có/Không</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Task có mục tiêu đo được chưa?</td>
+<td></td>
+</tr>
+<tr>
+<td>Có biết file/module nào được phép sửa chưa?</td>
+<td></td>
+</tr>
+<tr>
+<td>Có test hoặc command kiểm chứng chưa?</td>
+<td></td>
+</tr>
+<tr>
+<td>Có định nghĩa evidence phải nộp chưa?</td>
+<td></td>
+</tr>
+<tr>
+<td>Có điều kiện dừng hoặc escalation chưa?</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p><strong>Ví dụ thực tế</strong></p>
+<p>Một agent được giao &quot;optimize inference pipeline&quot; bằng một prompt rộng. Kết quả: compile error, hallucinated interface, thay đổi nhiều layer. Khi đổi sang module boundary rõ: Python coordinator, shared memory, C++ compute core, agent làm tốt từng hộp và tăng throughput đáng kể.</p>
+<p><strong>Tình huống thực chiến</strong></p>
+<p class="callout callout-good">Team backend muốn dùng agent sửa lỗi export PDF bị overflow layout. Học viên phải biến yêu cầu &quot;fix layout overflow&quot; thành goal có locked files, visual gate và screenshot evidence.</p>
+<p><strong>Bài tập thực hành</strong></p>
+<p>Viết lại yêu cầu mơ hồ sau thành bounded task: &quot;Tối ưu API này cho nhanh hơn và sạch hơn&quot;.</p>
+<p><strong>Tiêu chí đánh giá</strong></p>
+<ul>
+<li>Objective có metric: 20 điểm.</li>
+<li>Scope rõ: 20 điểm.</li>
+<li>Validation command cụ thể: 20 điểm.</li>
+<li>Evidence requirement rõ: 20 điểm.</li>
+<li>Có escalation rule: 20 điểm.</li>
+</ul>
+<h3 id="academy-bai-2-verification-gate-thiet-ke-ranh-gioi-thay-vi-micro-manage-code">Bài 2. Verification Gate: Thiết Kế Ranh Giới Thay Vì Micro-Manage Code</h3>
+<p><strong>Mục tiêu bài học</strong></p>
+<ul>
+<li>Hiểu vì sao gate quan trọng hơn việc đọc từng dòng code agent viết.</li>
+<li>Thiết kế verification loop có Planner, Executor, Reviewer.</li>
+<li>Phân biệt gate tự động và gate cần người audit.</li>
+</ul>
+<p><strong>Kiến thức cốt lõi</strong></p>
+<ul>
+<li>Sequential verification loop có khả năng chịu lỗi tốt hơn parallel code dump.</li>
+<li>Reviewer độc lập phải kiểm compile, test, visual QA và evidence.</li>
+<li>Black-box coding có thể chấp nhận nếu interface và gate đủ chặt.</li>
+</ul>
+<p><strong>Nguyên lý First Principles</strong></p>
+<ul>
+<li>Một module là hộp đen có thể tin được khi input, output, invariant và test được định nghĩa.</li>
+<li>Review không phải cảm nhận; review là kiểm chứng kết quả so với contract.</li>
+</ul>
+<p class="callout callout-warn"><strong>Sai lầm thường gặp</strong></p>
+<ul>
+<li>Cho nhiều agent chạy song song trên cùng codebase không có owner/scope.</li>
+<li>Không có fail-back loop; reviewer phát hiện lỗi nhưng không có cơ chế trả về executor.</li>
+<li>Chỉ dùng lint/compile, bỏ qua functional test hoặc visual test.</li>
+</ul>
+<p class="callout callout-good"><strong>Best Practices</strong></p>
+<ul>
+<li>Pipeline đơn giản: Planner -&gt; Executor -&gt; Reviewer -&gt; Gate.</li>
+<li>Reviewer không sửa thay executor trừ khi scope rất nhỏ; reviewer trả failure report.</li>
+<li>Gate phải non-negotiable: fail thì chưa xong.</li>
+<li>Evidence lưu vào PR, issue, task log hoặc report.</li>
+</ul>
+<p><strong>Checklist áp dụng</strong></p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Thành phần gate</th>
+<th>Cần có</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Compile/lint command</td>
+<td></td>
+</tr>
+<tr>
+<td>Unit/integration test</td>
+<td></td>
+</tr>
+<tr>
+<td>Visual/screenshot check nếu có UI</td>
+<td></td>
+</tr>
+<tr>
+<td>Benchmark nếu là performance task</td>
+<td></td>
+</tr>
+<tr>
+<td>Security/static audit nếu chạm auth/data</td>
+<td></td>
+</tr>
+<tr>
+<td>Evidence path hoặc log</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p><strong>Ví dụ thực tế</strong></p>
+<p>Trong slide deck, visual QA pipeline dùng headless screenshot để phát hiện overlap, text clipping, SVG squish. Agent tự sửa layout cho đến khi gate pass.</p>
+<p><strong>Tình huống thực chiến</strong></p>
+<p>Một dashboard React bị overlap ở mobile. Học viên thiết kế gate gồm Playwright screenshot desktop/mobile, DOM overflow check và acceptance rule &quot;zero overlap, 10-15% padding&quot;.</p>
+<p><strong>Bài tập thực hành</strong></p>
+<p>Thiết kế verification gate cho task: &quot;Thêm endpoint upload audio target speaker vào web UI&quot;.</p>
+<p><strong>Tiêu chí đánh giá</strong></p>
+<ul>
+<li>Gate phủ đúng rủi ro: 30 điểm.</li>
+<li>Command/evidence cụ thể: 30 điểm.</li>
+<li>Fail-back rõ: 20 điểm.</li>
+<li>Không over-engineer: 20 điểm.</li>
+</ul>
+<h3 id="academy-bai-3-goal-contract-bien-yeu-cau-thanh-goal-md">Bài 3. Goal Contract: Biến Yêu Cầu Thành <code>GOAL.md</code></h3>
+<p><strong>Mục tiêu bài học</strong></p>
+<ul>
+<li>Viết được goal contract đủ để agent chạy tự trị trong sandbox.</li>
+<li>Khóa phạm vi file, tool, command và Definition of Done.</li>
+<li>Biết dùng checklist để chống scope creep.</li>
+</ul>
+<p><strong>Kiến thức cốt lõi</strong></p>
+<ul>
+<li><code>GOAL.md</code> là hợp đồng kỹ thuật, không phải mô tả mong muốn.</li>
+<li>Contract tốt có objective hẹp, file boundary, validation command, evidence.</li>
+<li>Checklist giúp theo dõi trạng thái và ngăn agent bỏ sót bước.</li>
+</ul>
+<p><strong>Nguyên lý First Principles</strong></p>
+<ul>
+<li>Không thể kiểm soát hành vi agent nếu không kiểm soát không gian hành động.</li>
+<li>Autonomy hữu ích khi mục tiêu hẹp, môi trường có sandbox và gate có thể chạy lại.</li>
+</ul>
+<p class="callout callout-warn"><strong>Sai lầm thường gặp</strong></p>
+<ul>
+<li>Viết goal kiểu &quot;improve code quality&quot; không có metric.</li>
+<li>Không khóa file nên agent refactor lan.</li>
+<li>Không nói rõ output evidence.</li>
+<li>Không nêu những thứ không được làm.</li>
+</ul>
+<p class="callout callout-good"><strong>Best Practices</strong></p>
+<ul>
+<li>Bắt đầu bằng outcome có thể kiểm chứng.</li>
+<li>Tách allowed files và forbidden files.</li>
+<li>Ghi command kiểm chứng dạng copy-ready.</li>
+<li>Ghi pass standard, không chỉ &quot;run tests&quot;.</li>
+</ul>
+<p><strong>Checklist áp dụng</strong></p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Mục</th>
+<th>Nội dung cần điền</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Goal</td>
+<td>Một câu outcome đo được</td>
+</tr>
+<tr>
+<td>Mode</td>
+<td>manual-assisted/autonomous</td>
+</tr>
+<tr>
+<td>Allowed scope</td>
+<td>File/folder được sửa</td>
+</tr>
+<tr>
+<td>Forbidden scope</td>
+<td>File/folder không được đụng</td>
+</tr>
+<tr>
+<td>DoD</td>
+<td>Điều kiện hoàn tất</td>
+</tr>
+<tr>
+<td>Validation</td>
+<td>Command phải chạy</td>
+</tr>
+<tr>
+<td>Evidence</td>
+<td>Log/screenshot/benchmark/report</td>
+</tr>
+<tr>
+<td>Escalation</td>
+<td>Khi nào dừng và hỏi</td>
+</tr>
+</tbody></table></div>
+<p><strong>Ví dụ thực tế</strong></p>
+<p>Goal từ PDF: WhisperCompressProcessor chuyển mono audio samples thành features và trả lengths; validation bằng <code>cargo test</code>.</p>
+<p><strong>Tình huống thực chiến</strong></p>
+<p>Học viên chọn một issue trong repo thật và viết goal contract cho agent hoàn thành trong 60-90 phút.</p>
+<p><strong>Bài tập thực hành</strong></p>
+<p>Tạo <code>GOAL.md</code> cho task: &quot;Tối ưu VAD pipeline để latency &lt;30ms và không giảm accuracy&quot;.</p>
+<p><strong>Tiêu chí đánh giá</strong></p>
+<ul>
+<li>Objective đo được: 20 điểm.</li>
+<li>Scope lock rõ: 20 điểm.</li>
+<li>DoD testable: 25 điểm.</li>
+<li>Evidence rõ: 20 điểm.</li>
+<li>Escalation hợp lý: 15 điểm.</li>
+</ul>
+<h3 id="academy-bai-4-modular-autonomy-chia-he-thong-thanh-khoi-lego">Bài 4. Modular Autonomy: Chia Hệ Thống Thành Khối Lego</h3>
+<p><strong>Mục tiêu bài học</strong></p>
+<ul>
+<li>Biết chia hệ thống phức tạp thành module agent có thể xử lý.</li>
+<li>Thiết kế interface đủ chặt để black-box implementation an toàn.</li>
+<li>Phân biệt phần con người nên quyết và phần agent nên làm.</li>
+</ul>
+<p><strong>Kiến thức cốt lõi</strong></p>
+<ul>
+<li>Agent yếu ở kiến trúc rộng nhưng mạnh khi làm trong hộp có skeleton interface.</li>
+<li>Human giữ vai trò strategic: architecture, contract, audit, steering.</li>
+<li>Agent giữ vai trò tactical: boilerplate, test cycle, profiling, optimization.</li>
+</ul>
+<p><strong>Nguyên lý First Principles</strong></p>
+<ul>
+<li>Độ tin cậy của hệ thống phức tạp đến từ interface và invariant, không đến từ việc mọi thành phần đều hoàn hảo.</li>
+<li>Complexity nên nằm trong code module, không nằm trong mạng chat giữa nhiều agent.</li>
+</ul>
+<p class="callout callout-warn"><strong>Sai lầm thường gặp</strong></p>
+<ul>
+<li>Dùng swarm agent không có thứ tự, gây hallucination cascade.</li>
+<li>Giao agent tự thiết kế toàn bộ architecture.</li>
+<li>Không có skeleton nên agent tự tạo interface mới.</li>
+</ul>
+<p class="callout callout-good"><strong>Best Practices</strong></p>
+<ul>
+<li>Thiết kế module map trước khi triển khai.</li>
+<li>Mỗi module có input/output, invariant, owner và test riêng.</li>
+<li>Dùng sequential pipeline thay vì swarm chaos.</li>
+<li>Với domain hiếm, cung cấp steering coordinates chi tiết.</li>
+</ul>
+<p><strong>Checklist áp dụng</strong></p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Câu hỏi</th>
+<th>Trả lời</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Module này có một trách nhiệm chính chưa?</td>
+<td></td>
+</tr>
+<tr>
+<td>Input/output có typed contract chưa?</td>
+<td></td>
+</tr>
+<tr>
+<td>Invariant nào không được phá?</td>
+<td></td>
+</tr>
+<tr>
+<td>Test nào chứng minh module đúng?</td>
+<td></td>
+</tr>
+<tr>
+<td>Agent có đủ context domain chưa?</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p><strong>Ví dụ thực tế</strong></p>
+<p>Case inference pipeline: một prompt rộng thất bại; khi chia thành Python coordinator, shared memory và C++ compute core, agent xây từng module hiệu quả hơn.</p>
+<p><strong>Tình huống thực chiến</strong></p>
+<p>Team cần thêm batch processing vào service hiện hữu. Học viên phải chia task thành skeleton interface, test gate và executor task.</p>
+<p><strong>Bài tập thực hành</strong></p>
+<p>Vẽ module map cho một feature trong sản phẩm hiện tại, chọn 1 module phù hợp giao agent.</p>
+<p><strong>Tiêu chí đánh giá</strong></p>
+<ul>
+<li>Module có boundary rõ: 30 điểm.</li>
+<li>Interface có input/output cụ thể: 25 điểm.</li>
+<li>Test/invariant phù hợp: 25 điểm.</li>
+<li>Phân quyền human-agent hợp lý: 20 điểm.</li>
+</ul>
+<h3 id="academy-bai-5-operational-control-team-orchestration-va-fail-back-loop">Bài 5. Operational Control: Team Orchestration Và Fail-Back Loop</h3>
+<p><strong>Mục tiêu bài học</strong></p>
+<ul>
+<li>Thiết kế workflow có role rõ: planner, engineer, reviewer, user/auditor.</li>
+<li>Viết <code>WORKFLOW.md</code>/<code>AGENTS.md</code> cho agent team tuyến tính.</li>
+<li>Thiết kế fail-back khi compile/test/visual gate fail.</li>
+</ul>
+<p><strong>Kiến thức cốt lõi</strong></p>
+<ul>
+<li>Orchestration không cần phức tạp; markdown-defined teams đủ hiệu quả cho nhiều use case.</li>
+<li>Planner tạo/cập nhật checklist, engineer code/benchmark, reviewer kiểm đúng/sai.</li>
+<li>User hoặc lead audit quyết định merge, steering hoặc dừng.</li>
+</ul>
+<p><strong>Nguyên lý First Principles</strong></p>
+<ul>
+<li>Một workflow vận hành được khi mỗi vai trò có input, output và quyền hạn rõ.</li>
+<li>Fail-back là một phần của thiết kế, không phải ngoại lệ.</li>
+</ul>
+<p class="callout callout-warn"><strong>Sai lầm thường gặp</strong></p>
+<ul>
+<li>Planner vừa lập kế hoạch vừa code vừa tự review.</li>
+<li>Reviewer chỉ nói &quot;looks good&quot; không có evidence.</li>
+<li>Không ghi state, khiến lần chạy sau mất bối cảnh.</li>
+</ul>
+<p class="callout callout-good"><strong>Best Practices</strong></p>
+<ul>
+<li>Dùng checklist trạng thái: pending, in_progress, completed, blocked.</li>
+<li>Reviewer phải trích dẫn evidence.</li>
+<li>Mọi steering hint phải được ghi lại.</li>
+<li>Không thêm agent nếu pipeline 3 vai trò đã đủ.</li>
+</ul>
+<p><strong>Checklist áp dụng</strong></p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Role</th>
+<th>Input</th>
+<th>Output</th>
+<th>Không được làm</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Planner</td>
+<td>Goal, context, constraints</td>
+<td>Plan, checklist, scope</td>
+<td>Sửa code nếu không được giao</td>
+</tr>
+<tr>
+<td>Engineer</td>
+<td>Plan, allowed files, tests</td>
+<td>Code, logs, benchmark</td>
+<td>Mở rộng scope</td>
+</tr>
+<tr>
+<td>Reviewer</td>
+<td>Diff, test result, evidence</td>
+<td>Pass/fail report</td>
+<td>Bỏ qua gate</td>
+</tr>
+<tr>
+<td>User/Lead</td>
+<td>Business intent, risk</td>
+<td>Merge/steer/stop decision</td>
+<td>Micro-manage từng dòng</td>
+</tr>
+</tbody></table></div>
+<p><strong>Ví dụ thực tế</strong></p>
+<p>Workflow trong PDF: Developer nhận plan và sửa code; Reviewer kiểm visual QA; User audit UX/layout boundary trong cùng sandbox.</p>
+<p><strong>Tình huống thực chiến</strong></p>
+<p>Học viên mô phỏng một PR agent-generated: planner tạo task, engineer đề xuất thay đổi, reviewer phát hiện thiếu test và trả failure report.</p>
+<p><strong>Bài tập thực hành</strong></p>
+<p>Viết <code>WORKFLOW.md</code> cho task &quot;fix slide overflow&quot; hoặc task thật trong repo.</p>
+<p><strong>Tiêu chí đánh giá</strong></p>
+<ul>
+<li>Role rõ: 25 điểm.</li>
+<li>Handoff rõ: 25 điểm.</li>
+<li>Fail-back rõ: 25 điểm.</li>
+<li>Evidence/audit rõ: 25 điểm.</li>
+</ul>
+<h3 id="academy-bai-6-measurement-qa-gate-benchmark-va-sol-optimization">Bài 6. Measurement: QA Gate, Benchmark Và SOL Optimization</h3>
+<p><strong>Mục tiêu bài học</strong></p>
+<ul>
+<li>Thiết kế metric đúng cho correctness, speed, stability và cost.</li>
+<li>Biết khi nào dùng benchmark và khi nào cần SOL target.</li>
+<li>Không tối ưu mù; biết xác định compute-bound, I/O-bound, network-bound.</li>
+</ul>
+<p><strong>Kiến thức cốt lõi</strong></p>
+<ul>
+<li>Final gate phải kiểm trong môi trường thật hoặc gần thật: DOM click, microphone, serial/GPIO, real audio stream.</li>
+<li>SOL là giới hạn lý thuyết của phần cứng: CPU/GPU FLOPs, memory bandwidth, network latency.</li>
+<li>Agent performance tuning cần profiler, benchmark script và target rõ.</li>
+</ul>
+<p><strong>Nguyên lý First Principles</strong></p>
+<ul>
+<li>Tối ưu chỉ có nghĩa khi biết bottleneck và giới hạn vật lý.</li>
+<li>&quot;Nhanh hơn&quot; không phải metric; latency p95, throughput, CPU%, memory leak, contention mới là metric.</li>
+</ul>
+<p class="callout callout-warn"><strong>Sai lầm thường gặp</strong></p>
+<ul>
+<li>Benchmark không cố định input nên kết quả không so sánh được.</li>
+<li>Tối ưu logic khi bottleneck là I/O hoặc network.</li>
+<li>Dừng ở &quot;good enough&quot; dù còn xa giới hạn phần cứng.</li>
+<li>Không đo correctness sau tối ưu.</li>
+</ul>
+<p class="callout callout-good"><strong>Best Practices</strong></p>
+<ul>
+<li>Luôn có baseline trước tối ưu.</li>
+<li>Ghi benchmark script, input size, machine spec, commit hash.</li>
+<li>Correctness gate chạy trước performance gate.</li>
+<li>Với task ML/audio, đo latency và false positive/false negative.</li>
+</ul>
+<p><strong>Checklist áp dụng</strong></p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Mục đo</th>
+<th>Ví dụ</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Correctness</td>
+<td>Test pass, accuracy, false positive</td>
+</tr>
+<tr>
+<td>Stability</td>
+<td>25h run, memory leak, crash count</td>
+</tr>
+<tr>
+<td>Latency</td>
+<td>p50/p95/p99, &lt;30ms target</td>
+</tr>
+<tr>
+<td>Throughput</td>
+<td>requests/s, generations/s, channels</td>
+</tr>
+<tr>
+<td>Resource</td>
+<td>CPU, GPU, memory bandwidth</td>
+</tr>
+<tr>
+<td>SOL gap</td>
+<td>current vs theoretical limit</td>
+</tr>
+</tbody></table></div>
+<p><strong>Ví dụ thực tế</strong></p>
+<p>Case database tuning: agent chạy profiling, phát hiện lock contention, thay global lock bằng fine-grained <code>RwLock</code>, sửa memory leak và benchmark 25 giờ.</p>
+<p><strong>Tình huống thực chiến</strong></p>
+<p>Một VAD service cần latency &lt;30ms. Học viên thiết kế benchmark gồm audio dataset, noise profile, accuracy target, ONNX export và p95 latency.</p>
+<p><strong>Bài tập thực hành</strong></p>
+<p>Tạo SOL worksheet cho một pipeline: API, audio inference hoặc database write-heavy.</p>
+<p><strong>Tiêu chí đánh giá</strong></p>
+<ul>
+<li>Baseline đúng: 20 điểm.</li>
+<li>Bottleneck hypothesis rõ: 20 điểm.</li>
+<li>Metric đo được: 25 điểm.</li>
+<li>SOL target hợp lý: 20 điểm.</li>
+<li>Correctness không bị bỏ qua: 15 điểm.</li>
+</ul>
+<h3 id="academy-bai-7-competency-chuan-hoa-cach-team-lam-viec-voi-ai-agent">Bài 7. Competency: Chuẩn Hóa Cách Team Làm Việc Với AI Agent</h3>
+<p><strong>Mục tiêu bài học</strong></p>
+<ul>
+<li>Chuyển kỹ năng cá nhân thành team operating model.</li>
+<li>Thiết kế KPI và manager follow-up.</li>
+<li>Lập kế hoạch 30-60-90 ngày.</li>
+</ul>
+<p><strong>Kiến thức cốt lõi</strong></p>
+<ul>
+<li>Governance quan trọng hơn raw model intelligence.</li>
+<li>Team cần shared templates, shared gates và shared dashboard.</li>
+<li>Năng lực thật được chứng minh bằng evidence trong repo thật.</li>
+</ul>
+<p><strong>Nguyên lý First Principles</strong></p>
+<ul>
+<li>Một năng lực tổ chức chỉ tồn tại khi có chuẩn hành vi, công cụ lặp lại và dữ liệu đo lường.</li>
+<li>Nếu không đo Level 3/Level 4, đào tạo chỉ dừng ở cảm nhận.</li>
+</ul>
+<p class="callout callout-warn"><strong>Sai lầm thường gặp</strong></p>
+<ul>
+<li>Đào tạo xong nhưng không có pilot.</li>
+<li>Không có manager review nên hành vi cũ quay lại.</li>
+<li>Chỉ đo satisfaction, không đo defect/rework/lead time.</li>
+</ul>
+<p class="callout callout-good"><strong>Best Practices</strong></p>
+<ul>
+<li>Sau khóa học phải có 1 pilot trong 30 ngày.</li>
+<li>Mỗi team có 1 owner quản trị template và QA gate.</li>
+<li>Review hàng tuần dựa trên evidence, không dựa trên cảm nhận.</li>
+</ul>
+<p><strong>Checklist áp dụng</strong></p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Câu hỏi</th>
+<th>Có/Không</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Team có template chung chưa?</td>
+<td></td>
+</tr>
+<tr>
+<td>Có pilot owner chưa?</td>
+<td></td>
+</tr>
+<tr>
+<td>Có KPI baseline trước đào tạo chưa?</td>
+<td></td>
+</tr>
+<tr>
+<td>Manager có lịch follow-up chưa?</td>
+<td></td>
+</tr>
+<tr>
+<td>Có criteria để scale sau 60 ngày chưa?</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<p><strong>Ví dụ thực tế</strong></p>
+<p class="callout callout-good">Team R&amp;D áp dụng AI agent cho nhiều domain: IoT SDK, eBPF relay, GPU kernels, slide deck generation. Điểm chung không phải model, mà là goal contract, sandbox, verification gate và evidence.</p>
+<p><strong>Tình huống thực chiến</strong></p>
+<p>Học viên xây team adoption plan: chọn 3 workflow phù hợp, định nghĩa templates, chọn KPI và lịch audit.</p>
+<p><strong>Bài tập thực hành</strong></p>
+<p>Hoàn thành 30-60-90 day plan cho team mình.</p>
+<p><strong>Tiêu chí đánh giá</strong></p>
+<ul>
+<li>Plan thực tế: 25 điểm.</li>
+<li>KPI đo được: 25 điểm.</li>
+<li>Manager follow-up rõ: 25 điểm.</li>
+<li>Có điều kiện scale/stop: 25 điểm.</li>
+</ul>
+<hr>
+<h2 id="academy-5-case-study">5. Case Study</h2>
+<h3 id="academy-3-case-thanh-cong">3 Case Thành Công</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Case</th>
+<th>Bối cảnh</th>
+<th>Quyết định</th>
+<th>Kết quả</th>
+<th>Bài học</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Rust IoT Board trên ESP32-S3</td>
+<td>Board custom có mic, speaker, ML307 4G, thiếu tài liệu chính thức</td>
+<td>Cung cấp hardware link, C reference, pin photo; để agent map register/AT command trong scope hẹp</td>
+<td>Boot, record audio, stream TCP qua 4G, playback bằng Rust</td>
+<td>Domain hiếm vẫn làm được nếu biến phần cứng thành compiler contract và evidence vật lý</td>
+</tr>
+<tr>
+<td>Autonomous DB Performance Tuning</td>
+<td>Custom IoT DB write-heavy cần chạy ổn định 25h</td>
+<td>Cho agent profiler, benchmark script, auto-commit trong boundary; bắt buộc performance evidence</td>
+<td>Tìm lock contention, thay global lock bằng <code>RwLock</code>, sửa memory leak, giảm spike latency</td>
+<td>Agent mạnh ở vòng compile-profile-patch nếu goal và metric rõ</td>
+</tr>
+<tr>
+<td>Inference Pipeline Optimization</td>
+<td>Pipeline audio realtime bị nghẽn khi prompt kiến trúc quá rộng</td>
+<td>Chia skeleton thành Python coordinator, shared memory, C++ compute core</td>
+<td>TTS tăng từ khoảng 200 lên 800 generations/s; VAD concurrency tăng từ khoảng 10 lên 800 channels</td>
+<td>Agent thất bại ở architecture rộng nhưng mạnh khi build trong module box</td>
+</tr>
+</tbody></table></div>
+<h3 id="academy-3-case-that-bai">3 Case Thất Bại</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Case</th>
+<th>Bối cảnh</th>
+<th>Quyết định sai</th>
+<th>Kết quả</th>
+<th>Bài học</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>One-shot architecture prompt</td>
+<td>Muốn agent decouple toàn bộ inference layer một lần</td>
+<td>Prompt rộng, không skeleton, không interface contract</td>
+<td>Compile errors, hallucinated APIs, khó audit</td>
+<td>Human phải thiết kế contract trước; agent không nên tự quyết kiến trúc lớn</td>
+</tr>
+<tr>
+<td>Swarm chaos</td>
+<td>Nhiều agent cùng xử lý project không có pipeline tuyến tính</td>
+<td>Chạy song song nhiều role không scope lock</td>
+<td>Cascading hallucination, bug khó truy vết, token cost cao</td>
+<td>Pipeline đơn giản, tuần tự, có gate tốt hơn swarm phức tạp</td>
+</tr>
+<tr>
+<td>Unguided compile loop</td>
+<td>Agent gặp lỗi build và tự đoán sửa liên tục</td>
+<td>Không bắt đọc docs/log/spec, không escalation</td>
+<td>Error -&gt; guess -&gt; fix -&gt; compile fail lặp lại</td>
+<td>Khi unknown xuất hiện, chuyển từ guessing sang research và verification</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="academy-6-bo-cau-hoi-tu-duy-theo-bloom-s-taxonomy">6. Bộ Câu Hỏi Tư Duy Theo Bloom&#x27;s Taxonomy</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Mức Bloom</th>
+<th>Câu hỏi</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Remember</td>
+<td>Velocity trap là gì?</td>
+</tr>
+<tr>
+<td>Remember</td>
+<td>Ba vai trò trong verification loop là gì?</td>
+</tr>
+<tr>
+<td>Understand</td>
+<td>Vì sao agent giống junior developer ở edge case nhưng khác ở tốc độ lặp lỗi?</td>
+</tr>
+<tr>
+<td>Understand</td>
+<td>Vì sao &quot;process over raw intelligence&quot; quan trọng hơn đổi model?</td>
+</tr>
+<tr>
+<td>Apply</td>
+<td>Viết DoD cho task &quot;fix PDF export overflow&quot;.</td>
+</tr>
+<tr>
+<td>Apply</td>
+<td>Chọn gate phù hợp cho task UI, backend API, ML inference và embedded system.</td>
+</tr>
+<tr>
+<td>Analyze</td>
+<td>Phân tích vì sao one-shot prompt thất bại trong inference pipeline optimization.</td>
+</tr>
+<tr>
+<td>Analyze</td>
+<td>Xác định bottleneck của một service là compute-bound, I/O-bound hay network-bound từ metric cho trước.</td>
+</tr>
+<tr>
+<td>Evaluate</td>
+<td>Khi nào nên cho agent chạy autonomous, khi nào phải giữ human-in-the-loop?</td>
+</tr>
+<tr>
+<td>Evaluate</td>
+<td>Một workflow có 5 agent song song có đáng dùng hơn pipeline 3 bước không? Dựa vào tiêu chí nào?</td>
+</tr>
+<tr>
+<td>Create</td>
+<td>Thiết kế <code>GOAL.md</code> và <code>WORKFLOW.md</code> cho một pilot trong repo thật của team.</td>
+</tr>
+<tr>
+<td>Create</td>
+<td>Thiết kế dashboard KPI đo hiệu quả AI agent sau 60 ngày.</td>
+</tr>
+</tbody></table></div>
+<h3 id="academy-cau-hoi-phan-bien">Câu hỏi phản biện</h3>
+<ul>
+<li>Nếu test pass nhưng code khó maintain, gate hiện tại thiếu gì?</li>
+<li>Nếu agent tăng throughput nhưng tăng false positive, có được coi là thành công không?</li>
+<li>Nếu model mới mạnh hơn nhưng không có sandbox, rủi ro nào vẫn giữ nguyên?</li>
+<li>Nếu task không có tài liệu online, cần tăng steering như thế nào?</li>
+</ul>
+<h3 id="academy-cau-hoi-phan-tich">Câu hỏi phân tích</h3>
+<ul>
+<li>Tách một yêu cầu lớn thành 3 module agent-safe.</li>
+<li>Chỉ ra acceptance gate tối thiểu cho từng module.</li>
+<li>Phân tích một failure log để quyết định: retry, read docs, ask human hay stop.</li>
+</ul>
+<h3 id="academy-cau-hoi-danh-gia">Câu hỏi đánh giá</h3>
+<ul>
+<li>Đánh giá một <code>GOAL.md</code> mẫu theo thang 100 điểm.</li>
+<li>Đánh giá một benchmark report có đủ evidence để merge chưa.</li>
+<li>Đánh giá mức sẵn sàng scale AI agent từ cá nhân sang team.</li>
+</ul>
+<h3 id="academy-cau-hoi-ung-dung">Câu hỏi ứng dụng</h3>
+<ul>
+<li>Chọn một issue thật và viết goal contract.</li>
+<li>Thiết kế fail-back loop cho reviewer.</li>
+<li>Lập plan 30 ngày cho một pilot.</li>
+</ul>
+<hr>
+<h2 id="academy-7-bo-workshop-thuc-hanh">7. Bộ Workshop Thực Hành</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Hoạt động</th>
+<th>Hình thức</th>
+<th>Objective</th>
+<th>Hướng dẫn</th>
+<th>Timebox</th>
+<th>Materials</th>
+<th>Deliverable</th>
+<th>Scoring Guide</th>
+<th>Debrief Questions</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Risk Map</td>
+<td>Cá nhân</td>
+<td>Nhận diện rủi ro AI agent trong team</td>
+<td>Liệt kê 5 workflow đang dùng AI, đánh giá scope/test/evidence</td>
+<td>30&#x27;</td>
+<td>Risk map template</td>
+<td>Bản đồ rủi ro</td>
+<td>Rõ workflow 30%, đúng rủi ro 40%, hành động 30%</td>
+<td>Rủi ro nào đang bị xem nhẹ nhất?</td>
+</tr>
+<tr>
+<td>Rewrite Prompt to Goal</td>
+<td>Cá nhân</td>
+<td>Biến prompt mơ hồ thành contract</td>
+<td>Chọn 1 yêu cầu thật, viết objective/scope/DoD/evidence</td>
+<td>45&#x27;</td>
+<td><code>GOAL.md</code> template</td>
+<td>Goal contract</td>
+<td>Objective 20%, scope 20%, DoD 25%, evidence 20%, escalation 15%</td>
+<td>Điều gì khiến contract này agent-safe?</td>
+</tr>
+<tr>
+<td>Verification Gate Design</td>
+<td>Nhóm</td>
+<td>Thiết kế gate cho nhiều loại task</td>
+<td>Mỗi nhóm nhận UI/API/ML/embedded scenario và tạo gate</td>
+<td>60&#x27;</td>
+<td>QA gate checklist</td>
+<td>Gate matrix</td>
+<td>Risk coverage 35%, command 30%, pass/fail 20%, practicality 15%</td>
+<td>Gate nào nên tự động hóa trước?</td>
+</tr>
+<tr>
+<td>Planner-Engineer-Reviewer Role Play</td>
+<td>Role play</td>
+<td>Thực hành handoff và fail-back</td>
+<td>3 người đóng vai planner, engineer, reviewer; reviewer trả failure report</td>
+<td>75&#x27;</td>
+<td>Scenario cards</td>
+<td>Failure report + rework plan</td>
+<td>Role clarity 25%, evidence 30%, fail-back 25%, communication 20%</td>
+<td>Handoff bị thiếu thông tin ở đâu?</td>
+</tr>
+<tr>
+<td>SOL Optimization Simulation</td>
+<td>Simulation</td>
+<td>Đo và tối ưu theo bottleneck</td>
+<td>Nhận metric giả lập, xác định bottleneck, đặt SOL target</td>
+<td>90&#x27;</td>
+<td>Benchmark dataset giả lập</td>
+<td>SOL worksheet</td>
+<td>Baseline 20%, bottleneck 25%, target 25%, validation 30%</td>
+<td>Khi nào nên dừng tối ưu?</td>
+</tr>
+<tr>
+<td>Pilot Design Lab</td>
+<td>Nhóm</td>
+<td>Tạo plan áp dụng repo thật</td>
+<td>Chọn 1 pilot, module map, goal, workflow, KPI</td>
+<td>120&#x27;</td>
+<td>Pilot plan template</td>
+<td>Pilot pack</td>
+<td>Feasibility 30%, gate 25%, KPI 25%, adoption plan 20%</td>
+<td>Pilot này có thể chạy trong 30 ngày không?</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="academy-8-bo-template-dung-ngay">8. Bộ Template Dùng Ngay</h2>
+<h3 id="academy-8-1-checklist-ai-agent-task-readiness">8.1 Checklist: AI Agent Task Readiness</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Hạng mục</th>
+<th>Câu hỏi kiểm tra</th>
+<th>Pass/Fail</th>
+<th>Ghi chú</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Objective</td>
+<td>Outcome có đo được không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Scope</td>
+<td>File/folder được phép sửa có rõ không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Forbidden scope</td>
+<td>Có vùng cấm sửa không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Context</td>
+<td>Agent có đủ docs/spec/log không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Test</td>
+<td>Có command kiểm chứng không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Evidence</td>
+<td>Có yêu cầu log/screenshot/benchmark không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Escalation</td>
+<td>Có điều kiện dừng/hỏi không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Owner</td>
+<td>Ai review và quyết định merge?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h3 id="academy-8-2-sop-van-hanh-mot-ai-agent-task">8.2 SOP: Vận Hành Một AI Agent Task</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Bước</th>
+<th>Người phụ trách</th>
+<th>Hành động</th>
+<th>Output</th>
+<th>Gate</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Human/Planner</td>
+<td>Chọn task phù hợp, phân loại complexity</td>
+<td>Task brief</td>
+<td>Task không quá rộng</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Planner</td>
+<td>Viết <code>GOAL.md</code> và checklist</td>
+<td>Goal contract</td>
+<td>Lead review</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Executor</td>
+<td>Chạy trong sandbox, sửa đúng scope</td>
+<td>Code/log</td>
+<td>Scope check</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Reviewer</td>
+<td>Chạy compile/test/lint/visual/benchmark</td>
+<td>Review report</td>
+<td>Pass/fail</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Executor</td>
+<td>Rework nếu fail</td>
+<td>Updated output</td>
+<td>Gate rerun</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Human/Lead</td>
+<td>Audit evidence và quyết định merge</td>
+<td>Merge/stop/steer</td>
+<td>Evidence đủ</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Manager</td>
+<td>Ghi KPI và lesson learned</td>
+<td>Follow-up note</td>
+<td>Dashboard update</td>
+</tr>
+</tbody></table></div>
+<h3 id="academy-8-3-form-goal-md">8.3 Form: <code>GOAL.md</code></h3>
+<div class="code-card"><div class="code-head"><span>markdown</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-markdown"># Goal: [Tên task ngắn]
+
+## Objective
+[Outcome đo được trong một câu]
+
+## Mode
+autonomous | assisted | manual-review-required
+
+## Allowed Scope
+- [file/folder được sửa]
+
+## Forbidden Scope
+- [file/folder không được sửa]
+
+## Definition of Done
+- [Điều kiện hoàn tất 1]
+- [Điều kiện hoàn tất 2]
+- [Không regression X]
+
+## Validation Commands
+```bash
+[command build/test/lint/benchmark]
+```
+
+## Evidence Required
+- Test output:
+- Screenshot/video nếu có UI:
+- Benchmark report nếu có performance:
+- Notes về assumption hoặc blocker:
+
+## Escalation Rules
+- Dừng và hỏi nếu [điều kiện].
+- Không tự mở rộng scope nếu [điều kiện].</code></pre></div>
+<h3 id="academy-8-4-form-workflow-md">8.4 Form: <code>WORKFLOW.md</code></h3>
+<div class="code-card"><div class="code-head"><span>markdown</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-markdown"># AI Agent Workflow
+
+## Roles
+- Planner: đọc context, viết plan/checklist, khóa scope.
+- Engineer: thực hiện thay đổi trong allowed scope, chạy validation.
+- Reviewer: kiểm output, chạy gate, tạo pass/fail report.
+- Human Lead: audit evidence, quyết định merge/steer/stop.
+
+## Sequence
+1. Planner tạo hoặc cập nhật GOAL.md.
+2. Engineer thực thi task trong sandbox.
+3. Reviewer chạy gate độc lập.
+4. Nếu fail, reviewer gửi failure report cho engineer.
+5. Nếu pass, human lead audit evidence.
+
+## Required Evidence
+- Diff summary.
+- Test/lint/build output.
+- Screenshot/benchmark nếu liên quan.
+- Known risks.</code></pre></div>
+<h3 id="academy-8-5-bieu-mau-danh-gia-goal-contract">8.5 Biểu Mẫu Đánh Giá Goal Contract</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Tiêu chí</th>
+<th>Điểm tối đa</th>
+<th>Điểm đạt</th>
+<th>Nhận xét</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Objective đo được</td>
+<td>20</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Scope/forbidden scope rõ</td>
+<td>20</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>DoD testable</td>
+<td>25</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Validation command copy-ready</td>
+<td>15</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Evidence requirement rõ</td>
+<td>10</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Escalation rule hợp lý</td>
+<td>10</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Tổng</td>
+<td>100</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h3 id="academy-8-6-bieu-mau-bao-cao-agent-task">8.6 Biểu Mẫu Báo Cáo Agent Task</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Mục</th>
+<th>Nội dung</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Task ID</td>
+<td></td>
+</tr>
+<tr>
+<td>Goal</td>
+<td></td>
+</tr>
+<tr>
+<td>Owner</td>
+<td></td>
+</tr>
+<tr>
+<td>Agent/model/tool</td>
+<td></td>
+</tr>
+<tr>
+<td>Start/End</td>
+<td></td>
+</tr>
+<tr>
+<td>Files changed</td>
+<td></td>
+</tr>
+<tr>
+<td>Validation commands</td>
+<td></td>
+</tr>
+<tr>
+<td>Pass/fail result</td>
+<td></td>
+</tr>
+<tr>
+<td>Evidence links</td>
+<td></td>
+</tr>
+<tr>
+<td>Cycle count</td>
+<td></td>
+</tr>
+<tr>
+<td>Defects found</td>
+<td></td>
+</tr>
+<tr>
+<td>Rework needed</td>
+<td></td>
+</tr>
+<tr>
+<td>Merge decision</td>
+<td></td>
+</tr>
+<tr>
+<td>Lesson learned</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h3 id="academy-8-7-agent-task-complexity-matrix">8.7 Agent Task Complexity Matrix</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Loại task</th>
+<th>Ví dụ</th>
+<th>Mức autonomy</th>
+<th>Steering cần thiết</th>
+<th>Gate tối thiểu</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Mainstream/simple</td>
+<td>CRUD, standard API, UI form</td>
+<td>Cao</td>
+<td>Template + scope</td>
+<td>Build/lint/unit test</td>
+</tr>
+<tr>
+<td>Mainstream/edge</td>
+<td>Auth, payment, concurrency</td>
+<td>Trung bình</td>
+<td>Spec + negative cases</td>
+<td>Integration/security test</td>
+</tr>
+<tr>
+<td>Custom/domain</td>
+<td>IoT board, ML pipeline, custom DB</td>
+<td>Thấp đến trung bình</td>
+<td>Docs, logs, hardware/data, metric</td>
+<td>Physical/benchmark gate</td>
+</tr>
+<tr>
+<td>Architecture-wide</td>
+<td>Refactor nhiều service</td>
+<td>Thấp</td>
+<td>Human design skeleton trước</td>
+<td>Module-by-module gates</td>
+</tr>
+</tbody></table></div>
+<h3 id="academy-8-8-manager-follow-up-form">8.8 Manager Follow-Up Form</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Tuần</th>
+<th>Pilot</th>
+<th>Evidence đã có</th>
+<th>KPI chính</th>
+<th>Blocker</th>
+<th>Quyết định tiếp theo</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>W1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>W2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>W3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>W4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="academy-9-bo-danh-gia-nang-luc-100-diem">9. Bộ Đánh Giá Năng Lực 100 Điểm</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Giai đoạn</th>
+<th>Thành phần</th>
+<th>Điểm</th>
+<th>Evidence</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Trước đào tạo</td>
+<td>Pre-test kiến thức AI agent, gate, risk</td>
+<td>10</td>
+<td>Quiz 15 câu</td>
+</tr>
+<tr>
+<td>Trước đào tạo</td>
+<td>Phân tích một prompt mơ hồ</td>
+<td>10</td>
+<td>Rewrite attempt</td>
+</tr>
+<tr>
+<td>Sau đào tạo</td>
+<td>Post-test concept và case</td>
+<td>15</td>
+<td>Quiz + case answers</td>
+</tr>
+<tr>
+<td>Sau đào tạo</td>
+<td>Viết <code>GOAL.md</code></td>
+<td>20</td>
+<td>Goal contract</td>
+</tr>
+<tr>
+<td>Sau đào tạo</td>
+<td>Thiết kế verification gate</td>
+<td>15</td>
+<td>Gate matrix</td>
+</tr>
+<tr>
+<td>Sau đào tạo</td>
+<td>Role play planner-engineer-reviewer</td>
+<td>10</td>
+<td>Failure report</td>
+</tr>
+<tr>
+<td>Sau áp dụng</td>
+<td>Pilot trong repo/team thật</td>
+<td>15</td>
+<td>Evidence pack</td>
+</tr>
+<tr>
+<td>Sau áp dụng</td>
+<td>Manager review hành vi và KPI</td>
+<td>5</td>
+<td>Follow-up form</td>
+</tr>
+<tr>
+<td>Tổng</td>
+<td></td>
+<td>100</td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h3 id="academy-chuan-dat">Chuẩn đạt</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Mức</th>
+<th>Điểm</th>
+<th>Diễn giải</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Chưa đạt</td>
+<td>&lt;70</td>
+<td>Hiểu khái niệm nhưng chưa vận hành an toàn</td>
+</tr>
+<tr>
+<td>Đạt</td>
+<td>70-84</td>
+<td>Có thể viết goal, gate và chạy pilot nhỏ</td>
+</tr>
+<tr>
+<td>Khá</td>
+<td>85-94</td>
+<td>Có thể hướng dẫn team áp dụng workflow</td>
+</tr>
+<tr>
+<td>Xuất sắc</td>
+<td>95-100</td>
+<td>Có thể chuẩn hóa operating model và KPI cho nhiều team</td>
+</tr>
+</tbody></table></div>
+<h3 id="academy-rubric-danh-gia-thuc-chien">Rubric đánh giá thực chiến</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Tiêu chí</th>
+<th>1 - Yếu</th>
+<th>2 - Đạt cơ bản</th>
+<th>3 - Tốt</th>
+<th>4 - Xuất sắc</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Contract clarity</td>
+<td>Mơ hồ</td>
+<td>Có objective nhưng thiếu scope</td>
+<td>Đủ objective/scope/DoD</td>
+<td>Có cả forbidden scope/evidence/escalation</td>
+</tr>
+<tr>
+<td>Gate quality</td>
+<td>Không chạy được</td>
+<td>Có command nhưng thiếu coverage</td>
+<td>Gate phù hợp rủi ro</td>
+<td>Gate tự động, repeatable, có evidence</td>
+</tr>
+<tr>
+<td>Modular design</td>
+<td>Task quá rộng</td>
+<td>Có chia nhỏ nhưng interface yếu</td>
+<td>Module rõ</td>
+<td>Interface/invariant/test rất chặt</td>
+</tr>
+<tr>
+<td>Evidence audit</td>
+<td>Cảm tính</td>
+<td>Có test output</td>
+<td>Có log/screenshot/benchmark</td>
+<td>Evidence đủ cho manager/PR audit</td>
+</tr>
+<tr>
+<td>Business result</td>
+<td>Không đo</td>
+<td>Đo activity</td>
+<td>Đo quality/lead time</td>
+<td>Đo được tác động Level 4</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="academy-10-kpi-danh-gia-hieu-qua-dao-tao-theo-kirkpatrick">10. KPI Đánh Giá Hiệu Quả Đào Tạo Theo Kirkpatrick</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Level</th>
+<th>KPI</th>
+<th>Cách đo</th>
+<th>Nguồn dữ liệu</th>
+<th>Target</th>
+<th>Thời điểm</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Level 1: Reaction</td>
+<td>Điểm hài lòng nội dung</td>
+<td>Survey 1-5</td>
+<td>Form cuối khóa</td>
+<td>&gt;=4.3/5</td>
+<td>Ngày 2</td>
+</tr>
+<tr>
+<td>Level 1: Reaction</td>
+<td>Mức hữu ích với công việc</td>
+<td>Survey</td>
+<td>Form cuối khóa</td>
+<td>&gt;=85% chọn hữu ích/cực hữu ích</td>
+<td>Ngày 2</td>
+</tr>
+<tr>
+<td>Level 2: Learning</td>
+<td>Tăng điểm pre/post-test</td>
+<td>So sánh điểm</td>
+<td>Quiz</td>
+<td>+30% trung bình</td>
+<td>Ngày 2</td>
+</tr>
+<tr>
+<td>Level 2: Learning</td>
+<td>Tỷ lệ học viên viết <code>GOAL.md</code> đạt chuẩn</td>
+<td>Rubric</td>
+<td>Bài tập</td>
+<td>&gt;=80% đạt &gt;=70 điểm</td>
+<td>Ngày 2</td>
+</tr>
+<tr>
+<td>Level 2: Learning</td>
+<td>Tỷ lệ gate design đạt chuẩn</td>
+<td>Rubric</td>
+<td>Workshop</td>
+<td>&gt;=80% đạt &gt;=70 điểm</td>
+<td>Ngày 2</td>
+</tr>
+<tr>
+<td>Level 3: Behavior</td>
+<td>Số pilot AI-agent workflow chạy thật</td>
+<td>Theo dõi task</td>
+<td>Jira/GitHub/Linear</td>
+<td>&gt;=1 pilot/học viên hoặc team</td>
+<td>30 ngày</td>
+</tr>
+<tr>
+<td>Level 3: Behavior</td>
+<td>Tỷ lệ task agent có contract và evidence</td>
+<td>Audit task</td>
+<td>PR/task log</td>
+<td>&gt;=70% task agent</td>
+<td>60 ngày</td>
+</tr>
+<tr>
+<td>Level 3: Behavior</td>
+<td>Tỷ lệ reviewer gate được thực thi</td>
+<td>Audit PR</td>
+<td>CI/report</td>
+<td>&gt;=80% pilot PR</td>
+<td>60 ngày</td>
+</tr>
+<tr>
+<td>Level 4: Results</td>
+<td>Lead time task phù hợp giảm</td>
+<td>So sánh baseline</td>
+<td>Jira/GitHub</td>
+<td>-20% đến -30%</td>
+<td>90 ngày</td>
+</tr>
+<tr>
+<td>Level 4: Results</td>
+<td>Defect/rework không tăng</td>
+<td>Defect count</td>
+<td>Bug tracker/PR review</td>
+<td>Không tăng so với baseline</td>
+<td>90 ngày</td>
+</tr>
+<tr>
+<td>Level 4: Results</td>
+<td>Throughput engineering tăng có kiểm soát</td>
+<td>Completed tasks per sprint</td>
+<td>Delivery dashboard</td>
+<td>+15% với chất lượng ổn định</td>
+<td>90 ngày</td>
+</tr>
+<tr>
+<td>Level 4: Results</td>
+<td>Knowledge reuse</td>
+<td>Số template/gate được tái dùng</td>
+<td>Repo docs</td>
+<td>&gt;=3 reusable templates/team</td>
+<td>90 ngày</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="academy-11-so-tay-hoc-vien">11. Sổ Tay Học Viên</h2>
+<h3 id="academy-10-nguyen-ly-cot-loi">10 Nguyên Lý Cốt Lõi</h3>
+<ol>
+<li>Đừng micro-manage từng dòng code; hãy thiết kế boundary và gate.</li>
+<li>Tốc độ không có kiểm chứng là regression nhanh hơn.</li>
+<li>Agent mạnh trong module hẹp, yếu ở kiến trúc rộng thiếu ranh giới.</li>
+<li>Goal contract biến yêu cầu mơ hồ thành execution có kiểm soát.</li>
+<li>Test/spec phải có trước khi agent triển khai.</li>
+<li>Reviewer độc lập phải kiểm evidence, không chỉ đọc diff.</li>
+<li>Pipeline tuyến tính thường tốt hơn swarm phức tạp.</li>
+<li>Khi mắc unknown, dừng guessing và chuyển sang docs/log/measurement.</li>
+<li>Tối ưu phải dựa trên bottleneck và SOL, không dựa trên cảm giác.</li>
+<li>Governance, sandbox và compiler gate quan trọng hơn việc đổi model.</li>
+</ol>
+<h3 id="academy-10-sai-lam-pho-bien">10 Sai Lầm Phổ Biến</h3>
+<ol>
+<li>Giao task quá rộng cho agent.</li>
+<li>Không khóa file/folder được phép sửa.</li>
+<li>Không có Definition of Done.</li>
+<li>Không có validation command.</li>
+<li>Không yêu cầu evidence.</li>
+<li>Để agent tự thiết kế architecture lớn.</li>
+<li>Chạy nhiều agent song song không có owner.</li>
+<li>Chỉ đo tốc độ, không đo defect/rework.</li>
+<li>Tối ưu performance không có baseline.</li>
+<li>Đào tạo xong không có pilot 30 ngày.</li>
+</ol>
+<h3 id="academy-10-checklist-quan-trong">10 Checklist Quan Trọng</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Checklist</th>
+<th>Câu hỏi nhanh</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Goal</td>
+<td>Outcome có đo được không?</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td>Agent được sửa đâu, không được sửa đâu?</td>
+</tr>
+<tr>
+<td>Context</td>
+<td>Có docs/spec/log/data đủ chưa?</td>
+</tr>
+<tr>
+<td>DoD</td>
+<td>Khi nào coi là xong?</td>
+</tr>
+<tr>
+<td>Test</td>
+<td>Command nào chứng minh đúng?</td>
+</tr>
+<tr>
+<td>Evidence</td>
+<td>Log/screenshot/benchmark ở đâu?</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>Ai kiểm độc lập?</td>
+</tr>
+<tr>
+<td>Fail-back</td>
+<td>Nếu fail, quay lại executor thế nào?</td>
+</tr>
+<tr>
+<td>Metric</td>
+<td>Đo quality, speed, stability ra sao?</td>
+</tr>
+<tr>
+<td>Adoption</td>
+<td>Sau khóa học, pilot nào chạy trước?</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="academy-12-cheat-sheet-1-trang">12. Cheat Sheet 1 Trang</h2>
+<h3 id="academy-cong-thuc-lam-viec-voi-ai-agent">Công Thức Làm Việc Với AI Agent</h3>
+<div class="code-card"><div class="code-head"><span>text</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-text">Intent -&gt; Goal Contract -&gt; Sandbox -&gt; Executor -&gt; Reviewer -&gt; Gate -&gt; Evidence -&gt; Merge/Steer</code></pre></div>
+<h3 id="academy-20-kien-thuc-tao-80-gia-tri">20% Kiến Thức Tạo 80% Giá Trị</h3>
+<ul>
+<li>Agent không cần được tin; agent cần được kiểm chứng.</li>
+<li>Human thiết kế contract, architecture boundary và audit decision.</li>
+<li>Agent thực thi boilerplate, compile loop, test cycle, profiling và optimization.</li>
+<li>Mỗi task phải có: objective, scope, DoD, validation, evidence, escalation.</li>
+<li>Dùng pipeline tuyến tính: Planner -&gt; Engineer -&gt; Reviewer.</li>
+<li>Với UI: cần screenshot/overflow gate.</li>
+<li>Với backend: cần unit/integration/security gate.</li>
+<li>Với ML/audio: cần accuracy + latency + dataset gate.</li>
+<li>Với embedded: cần physical/hardware signal gate.</li>
+<li>Với performance: cần baseline + profiler + SOL target.</li>
+</ul>
+<h3 id="academy-red-flags">Red Flags</h3>
+<ul>
+<li>&quot;Optimize this&quot; nhưng không có metric.</li>
+<li>&quot;Refactor whole system&quot; nhưng không có module map.</li>
+<li>&quot;Fix until it works&quot; nhưng không có validation command.</li>
+<li>Agent sửa file ngoài scope.</li>
+<li>Reviewer không có evidence.</li>
+<li>Benchmark không ghi input/machine/commit.</li>
+</ul>
+<h3 id="academy-metrics-nen-do">Metrics Nên Đo</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Nhóm</th>
+<th>Metric</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Quality</td>
+<td>test pass rate, defect count, rework rate</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>lead time, cycle count, time to green</td>
+</tr>
+<tr>
+<td>Stability</td>
+<td>crash count, memory leak, 25h run result</td>
+</tr>
+<tr>
+<td>Performance</td>
+<td>latency p95, throughput, CPU/GPU/memory</td>
+</tr>
+<tr>
+<td>Adoption</td>
+<td>task có GOAL.md, task có evidence, manager follow-up</td>
+</tr>
+</tbody></table></div>
+<h3 id="academy-next-actions-sau-khoa-hoc">Next Actions Sau Khóa Học</h3>
+<ol>
+<li>Chọn 1 pilot nhỏ nhưng có giá trị thật.</li>
+<li>Viết <code>GOAL.md</code>.</li>
+<li>Thiết kế gate trước khi chạy agent.</li>
+<li>Chạy planner-engineer-reviewer.</li>
+<li>Lưu evidence và review với manager.</li>
+<li>Chuẩn hóa template nếu pilot thành công.</li>
+</ol>
+<hr>
+<h2 id="academy-13-lo-trinh-ap-dung-sau-dao-tao-30-60-90-ngay">13. Lộ Trình Áp Dụng Sau Đào Tạo 30-60-90 Ngày</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Giai đoạn</th>
+<th>Việc cần làm</th>
+<th>Kết quả mong đợi</th>
+<th>KPI</th>
+<th>Manager follow-up</th>
+<th>Workplace evidence</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>0-30 ngày</td>
+<td>Chọn 1-2 pilot task phù hợp; viết <code>GOAL.md</code>; chạy workflow planner-engineer-reviewer; thu evidence</td>
+<td>Team có trải nghiệm thật với bounded autonomy</td>
+<td>&gt;=1 pilot hoàn tất; &gt;=70 điểm rubric</td>
+<td>Weekly 30&#x27; review pilot</td>
+<td>Goal contract, PR/task log, test output</td>
+</tr>
+<tr>
+<td>31-60 ngày</td>
+<td>Chuẩn hóa template; áp dụng gate cho nhiều task; tạo dashboard basic</td>
+<td>Workflow bắt đầu lặp lại được</td>
+<td>&gt;=70% agent tasks có contract/evidence; defect không tăng</td>
+<td>Review KPI 2 tuần/lần</td>
+<td>Template repo, gate checklist, dashboard</td>
+</tr>
+<tr>
+<td>61-90 ngày</td>
+<td>Scale sang nhiều workflow; thêm benchmark/visual/security gates; đào tạo nội bộ cho người mới</td>
+<td>Team operating model ổn định</td>
+<td>Lead time giảm 20%; &gt;=3 template reusable; rework không tăng</td>
+<td>Monthly business review</td>
+<td>Case report, KPI trend, lessons learned</td>
+</tr>
+</tbody></table></div>
+<h3 id="academy-dieu-kien-scale">Điều kiện scale</h3>
+<ul>
+<li>Có ít nhất 3 pilot pass gate với evidence.</li>
+<li>Defect/rework không tăng so với baseline.</li>
+<li>Team dùng chung template thay vì mỗi người tự prompt.</li>
+<li>Manager thấy được KPI Level 3 và Level 4.</li>
+</ul>
+<h3 id="academy-dieu-kien-dung-hoac-dieu-chinh">Điều kiện dừng hoặc điều chỉnh</h3>
+<ul>
+<li>Agent thường xuyên sửa ngoài scope.</li>
+<li>Gate không phát hiện lỗi thật.</li>
+<li>Lead time giảm nhưng defect tăng.</li>
+<li>Học viên không tạo evidence.</li>
+<li>Task được chọn quá custom nhưng thiếu docs/data/hardware access.</li>
+</ul>
+<hr>
+<h2 id="academy-phu-luc-a-lich-trinh-2-ngay-goi-y">Phụ Lục A. Lịch Trình 2 Ngày Gợi Ý</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Ngày</th>
+<th>Khung giờ</th>
+<th>Nội dung</th>
+<th>Hoạt động</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Ngày 1</td>
+<td>09:00-10:30</td>
+<td>Mindset và velocity trap</td>
+<td>Risk map</td>
+</tr>
+<tr>
+<td>Ngày 1</td>
+<td>10:45-12:00</td>
+<td>Verification loop</td>
+<td>Case discussion</td>
+</tr>
+<tr>
+<td>Ngày 1</td>
+<td>13:30-15:00</td>
+<td>Goal contract</td>
+<td>Rewrite prompt to goal</td>
+</tr>
+<tr>
+<td>Ngày 1</td>
+<td>15:15-17:00</td>
+<td>Acceptance gate</td>
+<td>Gate design workshop</td>
+</tr>
+<tr>
+<td>Ngày 2</td>
+<td>09:00-10:30</td>
+<td>Modular autonomy</td>
+<td>Module map</td>
+</tr>
+<tr>
+<td>Ngày 2</td>
+<td>10:45-12:00</td>
+<td>Team orchestration</td>
+<td>Role play</td>
+</tr>
+<tr>
+<td>Ngày 2</td>
+<td>13:30-15:00</td>
+<td>Measurement và SOL</td>
+<td>Simulation</td>
+</tr>
+<tr>
+<td>Ngày 2</td>
+<td>15:15-17:00</td>
+<td>Pilot design và 90-day plan</td>
+<td>Final presentation</td>
+</tr>
+</tbody></table></div>
+<h2 id="academy-phu-luc-b-trainer-checklist">Phụ Lục B. Trainer Checklist</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Trước khóa</th>
+<th>Trong khóa</th>
+<th>Sau khóa</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Thu thập 3-5 workflow AI hiện tại của team</td>
+<td>Dùng case thật, không chỉ lý thuyết</td>
+<td>Theo dõi pilot 30 ngày</td>
+</tr>
+<tr>
+<td>Chuẩn bị repo/demo hoặc scenario</td>
+<td>Bắt học viên viết goal và gate</td>
+<td>Review evidence với manager</td>
+</tr>
+<tr>
+<td>In template/rubric</td>
+<td>Chấm theo rubric 100 điểm</td>
+<td>Tổng hợp KPI 60/90 ngày</td>
+</tr>
+<tr>
+<td>Chốt baseline KPI</td>
+<td>Ghi lại red flags phổ biến</td>
+<td>Chuẩn hóa template thành team standard</td>
+</tr>
+</tbody></table></div>
+<h2 id="academy-phu-luc-c-mapping-noi-dung-pdf-sang-giao-trinh">Phụ Lục C. Mapping Nội Dung PDF Sang Giáo Trình</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Nội dung trong PDF</th>
+<th>Đưa vào giáo trình</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Software evolution và project complexity</td>
+<td>Bài 1 mindset</td>
+</tr>
+<tr>
+<td>Velocity trap và sane loop</td>
+<td>Bài 1, checklist risk</td>
+</tr>
+<tr>
+<td>AI Agent vs Junior Developer</td>
+<td>Bài 1, câu hỏi Bloom</td>
+</tr>
+<tr>
+<td>Verification gate</td>
+<td>Bài 2, QA templates</td>
+</tr>
+<tr>
+<td>Mathematics of verification loops</td>
+<td>Bài 2, roadmap</td>
+</tr>
+<tr>
+<td>Modular lego-like blocks</td>
+<td>Bài 4</td>
+</tr>
+<tr>
+<td>Planner-executor-reviewer visualization</td>
+<td>Bài 2, 5</td>
+</tr>
+<tr>
+<td>Swarm chaos vs linear pipeline</td>
+<td>Bài 5</td>
+</tr>
+<tr>
+<td>Final gate và SOL</td>
+<td>Bài 6</td>
+</tr>
+<tr>
+<td>6 production case studies</td>
+<td>Case study và bài tập</td>
+</tr>
+<tr>
+<td>Modern developer workflow</td>
+<td>Khung năng lực, bài 4</td>
+</tr>
+<tr>
+<td>Goal-oriented contracts</td>
+<td>Bài 3, <code>GOAL.md</code> template</td>
+</tr>
+<tr>
+<td>Bounded autonomy execution</td>
+<td>Bài 5</td>
+</tr>
+<tr>
+<td>Process over raw intelligence</td>
+<td>Bài 7</td>
+</tr>
+<tr>
+<td>Tutorial goal/team/QA/steering/SOL</td>
+<td>Templates, workshop, roadmap</td>
+</tr>
+</tbody></table></div>
+</section>
+<section class="doc-section source-goal" id="goal-goal-md-hop-dong-muc-tieu-cho-ai-agent"><div class="source-label">GOAL.md</div><h1>GOAL.md - Hợp Đồng Mục Tiêu Cho AI Agent</h1>
+<h2 id="goal-1-ban-chat">1. Bản Chất</h2>
+<p><code>GOAL.md</code> là hợp đồng thực thi giữa con người và AI agent. Nó biến một mong muốn mơ hồ thành một nhiệm vụ có ranh giới, có điều kiện hoàn tất, có lệnh kiểm chứng và có bằng chứng để audit.</p>
+<p>AI agent không nên được giao việc bằng kiểu: &quot;sửa cho tốt hơn&quot;, &quot;tối ưu đi&quot;, &quot;refactor lại&quot;. Những câu này thiếu tiêu chuẩn đúng/sai. Agent sẽ tự suy diễn, sửa lan, tạo API giả, hoặc lặp vòng đoán lỗi. <code>GOAL.md</code> giải quyết vấn đề đó bằng cách khóa 6 điểm:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Thành phần</th>
+<th>Ý nghĩa</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Objective</td>
+<td>Kết quả cuối cùng phải đạt, viết sao cho đo được</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td>Vùng agent được phép làm việc</td>
+</tr>
+<tr>
+<td>Locked files</td>
+<td>File/folder được phép hoặc không được phép sửa</td>
+</tr>
+<tr>
+<td>DoD</td>
+<td>Definition of Done, điều kiện hoàn tất không thể thương lượng</td>
+</tr>
+<tr>
+<td>Validation commands</td>
+<td>Lệnh kiểm chứng bắt buộc chạy</td>
+</tr>
+<tr>
+<td>Evidence</td>
+<td>Bằng chứng phải nộp để reviewer/manager tin kết quả</td>
+</tr>
+</tbody></table></div>
+<p class="callout callout-good">Nguyên tắc cốt lõi: <strong>agent được tự do trong hộp, nhưng hộp phải do con người thiết kế</strong>.</p>
+<h2 id="goal-2-khi-nao-can-dung">2. Khi Nào Cần Dùng</h2>
+<p>Dùng <code>GOAL.md</code> khi task có một trong các điều kiện sau:</p>
+<ul>
+<li>Agent có thể sửa code, config, test, tài liệu hoặc workflow.</li>
+<li>Task có nguy cơ regression nếu sửa lan.</li>
+<li>Task cần chạy nhiều vòng compile/test/fix.</li>
+<li>Task liên quan performance, UI, ML, embedded, security hoặc dữ liệu thật.</li>
+<li>Task sẽ được giao cho agent chạy tương đối tự trị.</li>
+</ul>
+<p>Không cần dùng bản đầy đủ nếu task chỉ là hỏi đáp, đọc code, hoặc viết nháp không chạm repository.</p>
+<h2 id="goal-3-phuong-phap-viet-objective">3. Phương Pháp Viết Objective</h2>
+<p>Objective tốt phải có 4 đặc điểm:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Tiêu chí</th>
+<th>Câu hỏi kiểm tra</th>
+<th>Ví dụ tốt</th>
+<th>Ví dụ yếu</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Cụ thể</td>
+<td>Kết quả là gì?</td>
+<td>&quot;Thêm endpoint upload audio target speaker&quot;</td>
+<td>&quot;Cải thiện audio feature&quot;</td>
+</tr>
+<tr>
+<td>Đo được</td>
+<td>Biết pass/fail bằng gì?</td>
+<td>&quot;Post-test pass, file audio replay được trong UI&quot;</td>
+<td>&quot;Hoạt động tốt&quot;</td>
+</tr>
+<tr>
+<td>Hẹp</td>
+<td>Có thể hoàn tất trong một task?</td>
+<td>&quot;Sửa overflow ở slide 23&quot;</td>
+<td>&quot;Làm lại toàn bộ deck&quot;</td>
+</tr>
+<tr>
+<td>Gắn giá trị</td>
+<td>Vì sao cần làm?</td>
+<td>&quot;Để reviewer kiểm target speaker trước khi inference&quot;</td>
+<td>&quot;Cho sạch hơn&quot;</td>
+</tr>
+</tbody></table></div>
+<p>Mẫu câu:</p>
+<div class="code-card"><div class="code-head"><span>text</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-text">Hoàn thành [kết quả cụ thể] cho [phạm vi/module] sao cho [điều kiện đo được], được kiểm chứng bằng [lệnh/gate/evidence].</code></pre></div>
+<p>Ví dụ:</p>
+<div class="code-card"><div class="code-head"><span>text</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-text">Hoàn thành upload và replay target speaker audio trong Web UI sao cho người dùng có thể upload hoặc record audio, phát lại audio đã chọn, và test mock realtime voice pass bằng command npm test.</code></pre></div>
+<h2 id="goal-4-scope-va-locked-files">4. Scope Và Locked Files</h2>
+<p>Scope là vùng hành động hợp pháp của agent. Locked files là cơ chế ngăn agent &quot;giải quyết vấn đề&quot; bằng cách sửa những nơi không nên sửa.</p>
+<h3 id="goal-4-1-allowed-scope">4.1 Allowed Scope</h3>
+<p>Ghi rõ file/folder được sửa:</p>
+<div class="code-card"><div class="code-head"><span>markdown</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-markdown">## Allowed Scope
+- `src/features/audio-upload/**`
+- `src/components/TargetSpeakerRecorder.tsx`
+- `tests/audio-upload.test.ts`</code></pre></div>
+<h3 id="goal-4-2-forbidden-scope">4.2 Forbidden Scope</h3>
+<p>Ghi rõ vùng cấm:</p>
+<div class="code-card"><div class="code-head"><span>markdown</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-markdown">## Forbidden Scope
+- Không sửa authentication middleware.
+- Không đổi database schema.
+- Không sửa public API contract ngoài endpoint đã nêu.
+- Không xóa hoặc skip test hiện có.</code></pre></div>
+<h3 id="goal-4-3-scope-tot-va-scope-xau">4.3 Scope Tốt Và Scope Xấu</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Loại</th>
+<th>Ví dụ</th>
+<th>Rủi ro</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Scope quá rộng</td>
+<td>&quot;Sửa trong toàn repo nếu cần&quot;</td>
+<td>Agent refactor lan, khó review</td>
+</tr>
+<tr>
+<td>Scope quá hẹp</td>
+<td>&quot;Chỉ sửa 1 file&quot; trong khi test cần cập nhật</td>
+<td>Agent bị kẹt hoặc hack</td>
+</tr>
+<tr>
+<td>Scope vừa đủ</td>
+<td>&quot;Sửa feature folder, test file liên quan, không chạm auth/schema&quot;</td>
+<td>Review được, vẫn đủ không gian xử lý</td>
+</tr>
+</tbody></table></div>
+<h2 id="goal-5-definition-of-done">5. Definition Of Done</h2>
+<p>DoD là danh sách điều kiện bắt buộc để task được coi là hoàn tất. DoD không nên là cảm nhận. Nó phải kiểm chứng được.</p>
+<h3 id="goal-dod-tot">DoD Tốt</h3>
+<div class="code-card"><div class="code-head"><span>markdown</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-markdown">## Definition of Done
+- Người dùng upload được file `.wav` hoặc `.mp3` nhỏ hơn 10MB.
+- Người dùng record được audio tối thiểu 3 giây từ microphone.
+- Audio đã upload/record có thể replay trong UI.
+- Mock realtime voice test pass.
+- Không có TypeScript error.
+- Không có visual overflow ở viewport 390px và 1440px.</code></pre></div>
+<h3 id="goal-dod-yeu">DoD Yếu</h3>
+<div class="code-card"><div class="code-head"><span>markdown</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-markdown">## Definition of Done
+- UI đẹp.
+- Code clean.
+- Feature chạy ổn.</code></pre></div>
+<p>DoD yếu không có tiêu chuẩn kiểm chứng. Reviewer không thể biết agent đã xong thật hay chưa.</p>
+<h2 id="goal-6-validation-commands">6. Validation Commands</h2>
+<p>Validation command là lệnh bắt buộc agent hoặc reviewer chạy để chứng minh output đúng. Mỗi command nên có mục đích rõ.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Loại command</th>
+<th>Mục đích</th>
+<th>Ví dụ</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Build</td>
+<td>Kiểm compile/bundle</td>
+<td><code>npm run build</code></td>
+</tr>
+<tr>
+<td>Unit test</td>
+<td>Kiểm logic nhỏ</td>
+<td><code>npm test -- audio-upload</code></td>
+</tr>
+<tr>
+<td>Integration test</td>
+<td>Kiểm nhiều module</td>
+<td><code>npm run test:e2e</code></td>
+</tr>
+<tr>
+<td>Lint/typecheck</td>
+<td>Kiểm style/type</td>
+<td><code>npm run lint &amp;amp;&amp;amp; npm run typecheck</code></td>
+</tr>
+<tr>
+<td>Benchmark</td>
+<td>Kiểm performance</td>
+<td><code>cargo bench --bench write_path</code></td>
+</tr>
+<tr>
+<td>Visual</td>
+<td>Kiểm UI</td>
+<td><code>npx playwright test visual.spec.ts</code></td>
+</tr>
+</tbody></table></div>
+<p>Nếu không có command sẵn, ghi rõ &quot;phải bổ sung test nào&quot; hoặc &quot;manual verification nào được chấp nhận&quot;.</p>
+<h2 id="goal-7-evidence">7. Evidence</h2>
+<p class="callout callout-good">Evidence là thứ làm cho kết quả có thể audit. Không có evidence, reviewer chỉ đang tin lời agent.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Loại task</th>
+<th>Evidence tối thiểu</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Backend/API</td>
+<td>Test output, request/response mẫu, error case</td>
+</tr>
+<tr>
+<td>Frontend/UI</td>
+<td>Screenshot desktop/mobile, console error check, interaction result</td>
+</tr>
+<tr>
+<td>Performance</td>
+<td>Baseline, benchmark sau tối ưu, machine spec, input size</td>
+</tr>
+<tr>
+<td>ML/audio</td>
+<td>Dataset/sample, latency, accuracy/FPR/FNR, export artifact</td>
+</tr>
+<tr>
+<td>Embedded/IoT</td>
+<td>Serial log, GPIO/FFT/audio proof, hardware setup note</td>
+</tr>
+<tr>
+<td>Security</td>
+<td>Threat note, negative tests, dependency/static scan</td>
+</tr>
+</tbody></table></div>
+<p class="callout callout-good">Evidence phải đủ để một người không trực tiếp làm task vẫn hiểu vì sao task được pass.</p>
+<h2 id="goal-8-template-copy-ready">8. Template Copy-Ready</h2>
+<div class="code-card"><div class="code-head"><span>markdown</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-markdown"># Goal: [Tên task ngắn]
+
+## Objective
+[Outcome đo được trong một câu. Nêu rõ module, hành vi, metric hoặc gate.]
+
+## Business/Engineering Value
+[Vì sao task này đáng làm. Gắn với quality, speed, reliability, UX, cost hoặc risk.]
+
+## Mode
+autonomous | assisted | manual-review-required
+
+## Allowed Scope
+- `[file/folder được phép sửa]`
+
+## Forbidden Scope
+- `[file/folder không được sửa]`
+- Không xóa/skip test hiện có nếu chưa được phép.
+- Không đổi public API ngoài phạm vi đã mô tả.
+
+## Inputs Available
+- Spec:
+- Logs:
+- Screenshots:
+- Dataset/sample:
+- Related docs:
+
+## Definition of Done
+- [Điều kiện hoàn tất 1, đo được]
+- [Điều kiện hoàn tất 2, đo được]
+- [Không regression X]
+
+## Validation Commands
+```bash
+[command build/test/lint/benchmark]
+```
+
+## Evidence Required
+- Diff summary:
+- Test/build output:
+- Screenshot/video nếu có UI:
+- Benchmark report nếu có performance:
+- Known risks hoặc assumptions:
+
+## Escalation Rules
+- Dừng và hỏi nếu phải sửa ngoài `Allowed Scope`.
+- Dừng và hỏi nếu validation fail quá 2 vòng cùng một lỗi.
+- Dừng và hỏi nếu thiếu tài liệu/spec để xác định đúng sai.
+
+## Completion Standard
+Task chỉ được coi là hoàn tất khi toàn bộ DoD pass và evidence được ghi lại.</code></pre></div>
+<h2 id="goal-9-vi-du-ap-dung">9. Ví Dụ Áp Dụng</h2>
+<div class="code-card"><div class="code-head"><span>markdown</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-markdown"># Goal: Fix PDF Export Layout Overflow
+
+## Objective
+Sửa lỗi text overflow trong PDF export slide 23 sao cho nội dung không bị cắt ở desktop và mobile preview, được kiểm chứng bằng visual screenshot gate.
+
+## Business/Engineering Value
+Đảm bảo tài liệu xuất bản có chất lượng trình bày ổn định, giảm lỗi thủ công trước khi publish.
+
+## Mode
+assisted
+
+## Allowed Scope
+- `slides/SLIDES.md`
+- `src/export/pdf.ts`
+- `src/styles/export.css`
+- `tests/visual/pdf-export.spec.ts`
+
+## Forbidden Scope
+- Không đổi theme toàn cục.
+- Không sửa nội dung các slide khác nếu không cần.
+- Không skip visual test.
+
+## Inputs Available
+- Screenshot lỗi slide 23.
+- Existing visual test suite.
+- Export command hiện tại.
+
+## Definition of Done
+- Slide 23 không có text clipping.
+- Desktop 1440px và mobile 390px đều không overflow.
+- PDF export chạy thành công.
+- Không có regression visual ở 3 slide liền trước và sau slide 23.
+
+## Validation Commands
+```bash
+npm run build
+npm run test:visual -- pdf-export
+npm run export:pdf
+```
+
+## Evidence Required
+- Screenshot trước/sau.
+- Test output.
+- Đường dẫn file PDF export.
+- Ghi chú nếu phải thay đổi layout rule.
+
+## Escalation Rules
+- Dừng nếu cần đổi global typography scale.
+- Dừng nếu visual regression xuất hiện ngoài slide 20-26.</code></pre></div>
+<h2 id="goal-10-rubric-danh-gia-goal-md">10. Rubric Đánh Giá GOAL.md</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Tiêu chí</th>
+<th>Điểm tối đa</th>
+<th>Mô tả đạt chuẩn</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Objective</td>
+<td>20</td>
+<td>Cụ thể, đo được, hẹp, gắn kết quả</td>
+</tr>
+<tr>
+<td>Scope/locked files</td>
+<td>20</td>
+<td>Allowed và forbidden scope rõ</td>
+</tr>
+<tr>
+<td>DoD</td>
+<td>20</td>
+<td>Điều kiện hoàn tất kiểm chứng được</td>
+</tr>
+<tr>
+<td>Validation</td>
+<td>15</td>
+<td>Command copy-ready hoặc manual gate rõ</td>
+</tr>
+<tr>
+<td>Evidence</td>
+<td>15</td>
+<td>Bằng chứng đủ để audit</td>
+</tr>
+<tr>
+<td>Escalation</td>
+<td>10</td>
+<td>Biết khi nào dừng/hỏi/không tự mở rộng</td>
+</tr>
+</tbody></table></div>
+<p class="callout callout-good">Chuẩn pass: từ 70/100. Chuẩn xuất sắc: từ 90/100 và có evidence policy rõ.</p>
+</section>
+<section class="doc-section source-workflow" id="workflow-workflow-md-quy-trinh-dieu-phoi-ai-agent-tuyen-tinh"><div class="source-label">WORKFLOW.md</div><h1>WORKFLOW.md - Quy Trình Điều Phối AI Agent Tuyến Tính</h1>
+<h2 id="workflow-1-ban-chat">1. Bản Chất</h2>
+<p><code>WORKFLOW.md</code> mô tả cách nhiều vai trò phối hợp để biến một <code>GOAL.md</code> thành output đã được kiểm chứng. Nếu <code>GOAL.md</code> là hợp đồng mục tiêu, thì <code>WORKFLOW.md</code> là quy trình vận hành.</p>
+<p>Mục tiêu của workflow không phải tạo thật nhiều agent. Mục tiêu là tạo một chuỗi trách nhiệm rõ:</p>
+<div class="code-card"><div class="code-head"><span>text</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-text">Planner -&gt; Engineer/Executor -&gt; Reviewer -&gt; Human Lead -&gt; Merge/Steer/Stop</code></pre></div>
+<p>Workflow tốt giúp team tránh 3 lỗi phổ biến:</p>
+<ul>
+<li>Một agent vừa lập kế hoạch, vừa code, vừa tự review nên không có kiểm chứng độc lập.</li>
+<li>Nhiều agent chạy song song không scope lock, tạo xung đột và hallucination cascade.</li>
+<li>Reviewer phát hiện lỗi nhưng không có fail-back rule để trả task về executor.</li>
+</ul>
+<p class="callout callout-good">Nguyên tắc: <strong>pipeline tuyến tính, role rõ, handoff rõ, gate rõ</strong>.</p>
+<h2 id="workflow-2-role-sequence">2. Role Sequence</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Role</th>
+<th>Trách nhiệm chính</th>
+<th>Input nhận vào</th>
+<th>Output phải tạo</th>
+<th>Không được làm</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Planner</td>
+<td>Hiểu goal, chia bước, khóa scope, chuẩn bị checklist</td>
+<td>User intent, repo context, <code>GOAL.md</code></td>
+<td>Plan, task checklist, risk note</td>
+<td>Không tự ý sửa code nếu workflow không cho phép</td>
+</tr>
+<tr>
+<td>Engineer/Executor</td>
+<td>Thực thi trong allowed scope, chạy validation sơ bộ</td>
+<td>Plan, allowed files, context, commands</td>
+<td>Code/config/test changes, execution log</td>
+<td>Không mở rộng scope, không skip test</td>
+</tr>
+<tr>
+<td>Reviewer</td>
+<td>Kiểm độc lập output so với DoD và gate</td>
+<td>Diff, logs, commands, evidence</td>
+<td>Pass/fail report, rework request</td>
+<td>Không pass khi thiếu evidence</td>
+</tr>
+<tr>
+<td>Human Lead</td>
+<td>Quyết định merge, steer, stop hoặc mở scope</td>
+<td>Review report, evidence, business context</td>
+<td>Decision record</td>
+<td>Không micro-manage từng dòng nếu gate đủ</td>
+</tr>
+<tr>
+<td>Manager/Owner</td>
+<td>Theo dõi adoption và KPI sau task</td>
+<td>Task report, KPI, blocker</td>
+<td>Follow-up action</td>
+<td>Không chỉ đo cảm nhận</td>
+</tr>
+</tbody></table></div>
+<h2 id="workflow-3-handoff-rule">3. Handoff Rule</h2>
+<p>Handoff là điểm bàn giao giữa các vai trò. Handoff yếu làm agent sau phải đoán lại bối cảnh.</p>
+<h3 id="workflow-3-1-planner-engineer">3.1 Planner -&gt; Engineer</h3>
+<p>Planner chỉ bàn giao khi có:</p>
+<ul>
+<li>Objective rõ.</li>
+<li>Allowed/forbidden scope.</li>
+<li>Checklist từng bước.</li>
+<li>Validation commands.</li>
+<li>Known risks.</li>
+<li>Expected evidence.</li>
+</ul>
+<p>Mẫu handoff:</p>
+<div class="code-card"><div class="code-head"><span>markdown</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-markdown">## Planner Handoff
+- Goal:
+- Allowed scope:
+- Forbidden scope:
+- Implementation sequence:
+- Validation commands:
+- Evidence required:
+- Risks:</code></pre></div>
+<h3 id="workflow-3-2-engineer-reviewer">3.2 Engineer -&gt; Reviewer</h3>
+<p>Engineer chỉ bàn giao khi có:</p>
+<ul>
+<li>Diff summary.</li>
+<li>Files changed.</li>
+<li>Commands đã chạy.</li>
+<li>Kết quả pass/fail.</li>
+<li>Evidence path.</li>
+<li>Known limitations.</li>
+</ul>
+<p>Mẫu handoff:</p>
+<div class="code-card"><div class="code-head"><span>markdown</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-markdown">## Engineer Handoff
+- Summary:
+- Files changed:
+- Commands run:
+- Results:
+- Evidence:
+- Known risks:</code></pre></div>
+<h3 id="workflow-3-3-reviewer-engineer">3.3 Reviewer -&gt; Engineer</h3>
+<p>Nếu fail, reviewer phải trả failure report có thể hành động được:</p>
+<div class="code-card"><div class="code-head"><span>markdown</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-markdown">## Failure Report
+- Failed gate:
+- Evidence:
+- Expected behavior:
+- Actual behavior:
+- Likely area:
+- Required rework:
+- Do not change:</code></pre></div>
+<p>Reviewer không nên viết kiểu &quot;fix it&quot; vì executor sẽ lại đoán.</p>
+<h3 id="workflow-3-4-reviewer-human-lead">3.4 Reviewer -&gt; Human Lead</h3>
+<p>Nếu pass, reviewer bàn giao:</p>
+<ul>
+<li>DoD status.</li>
+<li>Evidence summary.</li>
+<li>Residual risk.</li>
+<li>Merge recommendation.</li>
+</ul>
+<h2 id="workflow-4-fail-back-rule">4. Fail-Back Rule</h2>
+<p>Fail-back là quy tắc khi output không pass gate. Đây là phần bắt buộc trong bounded autonomy.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Tình huống fail</th>
+<th>Hành động</th>
+<th>Ai quyết định</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Compile/lint fail do lỗi rõ</td>
+<td>Trả về Engineer sửa trong scope</td>
+<td>Reviewer</td>
+</tr>
+<tr>
+<td>Test fail do behavior sai</td>
+<td>Trả failure report, yêu cầu sửa logic/test</td>
+<td>Reviewer</td>
+</tr>
+<tr>
+<td>Visual fail</td>
+<td>Trả screenshot + vị trí lỗi + viewport</td>
+<td>Reviewer</td>
+</tr>
+<tr>
+<td>Benchmark không đạt</td>
+<td>Yêu cầu profiler/baseline hoặc đổi hypothesis</td>
+<td>Reviewer/Human Lead</td>
+</tr>
+<tr>
+<td>Cần sửa ngoài scope</td>
+<td>Dừng và xin mở scope</td>
+<td>Human Lead</td>
+</tr>
+<tr>
+<td>Fail cùng lỗi quá 2 vòng</td>
+<td>Dừng guessing, chuyển sang docs/log/research</td>
+<td>Human Lead</td>
+</tr>
+<tr>
+<td>Spec mơ hồ</td>
+<td>Dừng và hỏi người sở hữu business/technical intent</td>
+<td>Human Lead</td>
+</tr>
+</tbody></table></div>
+<p class="callout callout-good">Nguyên tắc: fail không phải thất bại; fail là tín hiệu để thu hẹp giả định và tăng evidence.</p>
+<h2 id="workflow-5-review-checklist">5. Review Checklist</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Nhóm kiểm tra</th>
+<th>Câu hỏi</th>
+<th>Pass/Fail</th>
+<th>Evidence</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Scope</td>
+<td>Agent có chỉ sửa allowed files không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Objective</td>
+<td>Output có đạt outcome trong goal không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>DoD</td>
+<td>Từng DoD đã pass chưa?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Build</td>
+<td>Build/compile có pass không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Test</td>
+<td>Unit/integration/e2e test có pass không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Lint/type</td>
+<td>Lint/typecheck có pass không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Visual</td>
+<td>Screenshot có overflow/clipping không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Performance</td>
+<td>Benchmark có baseline và target không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Security</td>
+<td>Có chạm auth/data/permission không? Nếu có, đã kiểm chưa?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Evidence</td>
+<td>Evidence đủ cho người khác audit không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Risk</td>
+<td>Có residual risk nào cần ghi lại không?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="workflow-6-template-copy-ready">6. Template Copy-Ready</h2>
+<div class="code-card"><div class="code-head"><span>markdown</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-markdown"># AI Agent Workflow
+
+## Workflow Objective
+[Mục tiêu quy trình: ví dụ chạy AI agent task có kiểm chứng trong repo thật]
+
+## Roles
+- Planner:
+- Engineer/Executor:
+- Reviewer:
+- Human Lead:
+- Manager/Owner:
+
+## Sequence
+1. Planner đọc `GOAL.md`, repo context và tạo checklist.
+2. Engineer thực thi trong allowed scope.
+3. Engineer chạy validation command sơ bộ và ghi evidence.
+4. Reviewer kiểm diff, chạy lại gate độc lập nếu có thể.
+5. Nếu fail, Reviewer tạo failure report và trả về Engineer.
+6. Nếu pass, Reviewer gửi pass report cho Human Lead.
+7. Human Lead quyết định merge, steer, stop hoặc mở scope.
+8. Manager/Owner ghi KPI và follow-up nếu là pilot/adoption task.
+
+## Planner Handoff
+- Goal:
+- Allowed scope:
+- Forbidden scope:
+- Implementation sequence:
+- Validation commands:
+- Evidence required:
+- Risks:
+
+## Engineer Handoff
+- Summary:
+- Files changed:
+- Commands run:
+- Results:
+- Evidence:
+- Known risks:
+
+## Reviewer Report
+- Scope compliance:
+- DoD status:
+- Validation result:
+- Evidence reviewed:
+- Failed gates:
+- Residual risks:
+- Recommendation: pass | rework | stop | ask-human
+
+## Fail-Back Rules
+- Compile/lint/test fail: return to Engineer with exact error and expected fix area.
+- Same failure repeats twice: stop guessing and request docs/log/human input.
+- Out-of-scope change needed: Human Lead must approve scope expansion.
+- Missing evidence: cannot pass.
+
+## Review Checklist
+- [ ] Scope respected
+- [ ] DoD pass
+- [ ] Build pass
+- [ ] Tests pass
+- [ ] Lint/typecheck pass
+- [ ] Visual/benchmark/security gates checked where relevant
+- [ ] Evidence recorded
+- [ ] Residual risks documented</code></pre></div>
+<h2 id="workflow-7-vi-du-workflow-cho-ui-visual-fix">7. Ví Dụ Workflow Cho UI Visual Fix</h2>
+<div class="code-card"><div class="code-head"><span>markdown</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-markdown"># AI Agent Workflow: Fix Slide Visual Overflow
+
+## Roles
+- Planner: xác định slide lỗi, viewport cần kiểm, file được sửa.
+- Engineer: chỉnh layout/style trong allowed scope.
+- Reviewer: chạy screenshot gate và kiểm clipping/overlap.
+- Human Lead: duyệt merge nếu visual pass.
+
+## Sequence
+1. Planner tạo checklist: reproduce -&gt; fix -&gt; screenshot -&gt; export.
+2. Engineer sửa CSS/layout.
+3. Engineer chạy `npm run build` và `npm run test:visual`.
+4. Reviewer chạy lại visual test ở 390px và 1440px.
+5. Nếu còn overlap, reviewer gửi screenshot và vị trí lỗi.
+6. Nếu pass, Human Lead kiểm PDF export.
+
+## Fail-Back Rules
+- Nếu sửa global theme gây regression, revert phần global và tìm fix cục bộ.
+- Nếu text vẫn clipping sau 2 vòng, mở lại layout constraint với Human Lead.</code></pre></div>
+<h2 id="workflow-8-dau-hieu-workflow-yeu">8. Dấu Hiệu Workflow Yếu</h2>
+<ul>
+<li>Không biết ai có quyền quyết định merge.</li>
+<li>Reviewer không có checklist hoặc evidence.</li>
+<li>Engineer tự mở rộng scope.</li>
+<li>Planner không ghi assumption.</li>
+<li>Fail report chỉ nói chung chung.</li>
+<li>Task pass dù validation chưa chạy.</li>
+<li>Không có nơi ghi residual risk.</li>
+</ul>
+<h2 id="workflow-9-tieu-chuan-workflow-xuat-sac">9. Tiêu Chuẩn Workflow Xuất Sắc</h2>
+<p>Workflow được coi là tốt khi một người mới trong team có thể đọc <code>GOAL.md</code> + <code>WORKFLOW.md</code> và hiểu:</p>
+<ul>
+<li>Việc cần làm là gì.</li>
+<li>Ai làm bước nào.</li>
+<li>Khi nào được chuyển bước.</li>
+<li>Khi nào phải trả về.</li>
+<li>Command nào chứng minh pass.</li>
+<li>Evidence nào cần lưu.</li>
+<li>Ai quyết định cuối cùng.</li>
+</ul>
+</section>
+<section class="doc-section source-qa-gate" id="qa-gate-qa-gate-checklist-cong-kiem-chung-chat-luong-cho-ai-agent"><div class="source-label">QA Gate Checklist</div><h1>QA Gate Checklist - Cổng Kiểm Chứng Chất Lượng Cho AI Agent</h1>
+<h2 id="qa-gate-1-ban-chat">1. Bản Chất</h2>
+<p>QA Gate là hàng rào kiểm chứng trước khi output của AI agent được coi là hoàn tất. Nếu không có gate, team chỉ đang đánh giá bằng cảm giác: code nhìn hợp lý, agent nói đã xong, hoặc demo chạy một lần.</p>
+<p>QA Gate chuyển câu hỏi từ:</p>
+<div class="code-card"><div class="code-head"><span>text</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-text">&quot;Agent có vẻ làm đúng không?&quot;</code></pre></div>
+<p>thành:</p>
+<div class="code-card"><div class="code-head"><span>text</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-text">&quot;Output có pass các kiểm chứng đã định nghĩa không?&quot;</code></pre></div>
+<p>Một gate tốt phải:</p>
+<ul>
+<li>Có thể chạy lại.</li>
+<li>Có pass/fail rõ.</li>
+<li>Gắn với rủi ro thật của task.</li>
+<li>Tạo evidence để reviewer audit.</li>
+<li>Không quá nặng đến mức không ai dùng.</li>
+</ul>
+<h2 id="qa-gate-2-cac-loai-gate-chinh">2. Các Loại Gate Chính</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Gate</th>
+<th>Mục đích</th>
+<th>Khi bắt buộc dùng</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Compile/build</td>
+<td>Chứng minh code build được</td>
+<td>Mọi task code</td>
+</tr>
+<tr>
+<td>Unit test</td>
+<td>Chứng minh logic nhỏ đúng</td>
+<td>Logic, parser, utility, business rule</td>
+</tr>
+<tr>
+<td>Integration/e2e test</td>
+<td>Chứng minh nhiều module phối hợp đúng</td>
+<td>API, workflow, user journey</td>
+</tr>
+<tr>
+<td>Lint/typecheck</td>
+<td>Chứng minh type/style/static rule ổn</td>
+<td>TypeScript, Rust, Go, Python project có lint</td>
+</tr>
+<tr>
+<td>Visual screenshot</td>
+<td>Chứng minh UI không vỡ</td>
+<td>Frontend, slide, PDF, dashboard</td>
+</tr>
+<tr>
+<td>Benchmark</td>
+<td>Chứng minh performance</td>
+<td>Optimization, DB, inference, real-time system</td>
+</tr>
+<tr>
+<td>Security check</td>
+<td>Chứng minh không mở rủi ro bảo mật</td>
+<td>Auth, permission, data, file upload, external API</td>
+</tr>
+</tbody></table></div>
+<h2 id="qa-gate-3-phuong-phap-chon-gate">3. Phương Pháp Chọn Gate</h2>
+<p class="callout callout-warn">Không phải task nào cũng cần mọi gate. Chọn gate theo rủi ro.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Nếu task chạm vào</th>
+<th>Gate tối thiểu</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Logic thuần</td>
+<td>Unit test + lint/typecheck</td>
+</tr>
+<tr>
+<td>API endpoint</td>
+<td>Unit + integration + negative cases</td>
+</tr>
+<tr>
+<td>UI layout</td>
+<td>Build + visual screenshot + interaction test</td>
+</tr>
+<tr>
+<td>PDF/slide export</td>
+<td>Export command + screenshot/PDF review</td>
+</tr>
+<tr>
+<td>Performance</td>
+<td>Correctness test + benchmark baseline/after</td>
+</tr>
+<tr>
+<td>ML/audio</td>
+<td>Dataset test + accuracy + latency</td>
+</tr>
+<tr>
+<td>Embedded/IoT</td>
+<td>Build + serial/GPIO/audio physical evidence</td>
+</tr>
+<tr>
+<td>Auth/security/data</td>
+<td>Security review + permission tests + negative tests</td>
+</tr>
+</tbody></table></div>
+<p class="callout callout-good">Nguyên tắc: <strong>gate phải kiểm đúng failure mode quan trọng nhất</strong>.</p>
+<h2 id="qa-gate-4-compile-build-gate">4. Compile/Build Gate</h2>
+<h3 id="qa-gate-muc-tieu">Mục tiêu</h3>
+<p>Xác nhận code không phá build. Đây là gate tối thiểu, nhưng không đủ để chứng minh behavior đúng.</p>
+<h3 id="qa-gate-checklist">Checklist</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Câu hỏi</th>
+<th>Pass/Fail</th>
+<th>Evidence</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Build command đã chạy chưa?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Build có chạy trên môi trường sạch hoặc gần sạch không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Có warning nghiêm trọng không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Agent có sửa config build ngoài scope không?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h3 id="qa-gate-vi-du-command">Ví dụ command</h3>
+<div class="code-card"><div class="code-head"><span>bash</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-bash">npm run build
+cargo build --workspace
+go test ./...
+python -m pytest</code></pre></div>
+<h2 id="qa-gate-5-unit-test-gate">5. Unit Test Gate</h2>
+<h3 id="qa-gate-muc-tieu-2">Mục tiêu</h3>
+<p>Kiểm tra logic nhỏ, deterministic, chạy nhanh.</p>
+<h3 id="qa-gate-test-tot-can-co">Test tốt cần có</h3>
+<ul>
+<li>Happy path.</li>
+<li>Edge cases.</li>
+<li>Error cases.</li>
+<li>Regression case liên quan bug đang sửa.</li>
+</ul>
+<h3 id="qa-gate-checklist-2">Checklist</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Câu hỏi</th>
+<th>Pass/Fail</th>
+<th>Evidence</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Có test mới cho behavior mới/bug fix không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Test fail được trước khi fix không, nếu có thể kiểm?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Test có edge case không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Có skip hoặc xóa test không?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="qa-gate-6-lint-typecheck-gate">6. Lint/Typecheck Gate</h2>
+<h3 id="qa-gate-muc-tieu-3">Mục tiêu</h3>
+<p>Phát hiện lỗi static: type mismatch, unused code, formatting rule, import sai, API misuse.</p>
+<h3 id="qa-gate-checklist-3">Checklist</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Câu hỏi</th>
+<th>Pass/Fail</th>
+<th>Evidence</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Typecheck pass chưa?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Lint pass chưa?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Có disable lint rule không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Có any/cast/hack đáng nghi không?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h3 id="qa-gate-vi-du-command-2">Ví dụ command</h3>
+<div class="code-card"><div class="code-head"><span>bash</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-bash">npm run lint
+npm run typecheck
+cargo clippy -- -D warnings
+ruff check .
+mypy .</code></pre></div>
+<h2 id="qa-gate-7-visual-screenshot-gate">7. Visual Screenshot Gate</h2>
+<h3 id="qa-gate-muc-tieu-4">Mục tiêu</h3>
+<p>Kiểm chứng UI, slide, PDF hoặc visual output không bị overlap, clipping, overflow, blank state, sai layout.</p>
+<h3 id="qa-gate-khi-can">Khi cần</h3>
+<ul>
+<li>Sửa giao diện.</li>
+<li>Tạo dashboard.</li>
+<li>Xuất PDF/slide.</li>
+<li>Render canvas/3D/map.</li>
+<li>Có responsive behavior.</li>
+</ul>
+<h3 id="qa-gate-checklist-4">Checklist</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Câu hỏi</th>
+<th>Pass/Fail</th>
+<th>Evidence</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Có screenshot desktop không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Có screenshot mobile không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Có kiểm console error không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Có kiểm text clipping/overflow không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Có kiểm interaction chính không?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h3 id="qa-gate-viewport-khuyen-nghi">Viewport khuyến nghị</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Loại</th>
+<th>Viewport</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Mobile</td>
+<td>390x844</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>768x1024</td>
+</tr>
+<tr>
+<td>Desktop</td>
+<td>1440x900</td>
+</tr>
+<tr>
+<td>Wide</td>
+<td>1920x1080</td>
+</tr>
+</tbody></table></div>
+<h2 id="qa-gate-8-benchmark-gate">8. Benchmark Gate</h2>
+<h3 id="qa-gate-muc-tieu-5">Mục tiêu</h3>
+<p>Chứng minh performance thay đổi theo hướng mong muốn mà không làm hỏng correctness.</p>
+<h3 id="qa-gate-benchmark-bat-buoc-co">Benchmark bắt buộc có</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Thành phần</th>
+<th>Ý nghĩa</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Baseline</td>
+<td>Kết quả trước tối ưu</td>
+</tr>
+<tr>
+<td>After</td>
+<td>Kết quả sau tối ưu</td>
+</tr>
+<tr>
+<td>Input</td>
+<td>Dataset/request size/audio length</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>Machine, CPU/GPU, memory, OS</td>
+</tr>
+<tr>
+<td>Metric</td>
+<td>Latency, throughput, memory, CPU/GPU</td>
+</tr>
+<tr>
+<td>Correctness</td>
+<td>Test chứng minh kết quả vẫn đúng</td>
+</tr>
+</tbody></table></div>
+<h3 id="qa-gate-checklist-5">Checklist</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Câu hỏi</th>
+<th>Pass/Fail</th>
+<th>Evidence</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Có baseline không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Có input cố định không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Có chạy đủ số lần để tránh nhiễu không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Có correctness gate trước benchmark không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Kết quả có so với target không?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="qa-gate-9-security-check-gate">9. Security Check Gate</h2>
+<h3 id="qa-gate-muc-tieu-6">Mục tiêu</h3>
+<p>Ngăn agent vô tình mở lỗ hổng khi sửa auth, upload, data access, secrets, dependency hoặc external API.</p>
+<h3 id="qa-gate-checklist-6">Checklist</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Rủi ro</th>
+<th>Câu hỏi</th>
+<th>Pass/Fail</th>
+<th>Evidence</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Auth</td>
+<td>Endpoint có kiểm user/session không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Authorization</td>
+<td>User có truy cập dữ liệu người khác được không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Input validation</td>
+<td>Input/file upload có validate size/type không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Secrets</td>
+<td>Có log hoặc commit secret không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Injection</td>
+<td>Query/shell/path có sanitize không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Dependency</td>
+<td>Có thêm package rủi ro không?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Data privacy</td>
+<td>Log có chứa PII/token/audio nhạy cảm không?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<h2 id="qa-gate-10-qa-gate-template">10. QA Gate Template</h2>
+<div class="code-card"><div class="code-head"><span>markdown</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-markdown"># QA Gate Checklist
+
+## Task
+- Goal:
+- Owner:
+- Reviewer:
+- Date:
+
+## Required Gates
+- [ ] Compile/build
+- [ ] Unit test
+- [ ] Integration/e2e
+- [ ] Lint/typecheck
+- [ ] Visual screenshot
+- [ ] Benchmark
+- [ ] Security check
+
+## Commands
+```bash
+[command 1]
+[command 2]
+```
+
+## Results
+| Gate | Command/Method | Result | Evidence | Reviewer note |
+|---|---|---|---|---|
+| Build | | pass/fail | | |
+| Unit test | | pass/fail | | |
+| Lint/type | | pass/fail | | |
+| Visual | | pass/fail | | |
+| Benchmark | | pass/fail | | |
+| Security | | pass/fail | | |
+
+## Decision
+- Recommendation: pass | rework | stop | ask-human
+- Required rework:
+- Residual risks:</code></pre></div>
+<h2 id="qa-gate-11-tieu-chuan-pass">11. Tiêu Chuẩn Pass</h2>
+<p>Một task chỉ được pass khi:</p>
+<ul>
+<li>Gate bắt buộc theo loại task đã chạy.</li>
+<li>Không có gate fail chưa giải thích.</li>
+<li>Evidence đủ cho reviewer độc lập đọc lại.</li>
+<li>Residual risk được ghi rõ.</li>
+<li>Nếu task performance: correctness không bị giảm.</li>
+<li>Nếu task UI: có ít nhất desktop/mobile evidence.</li>
+<li>Nếu task security-sensitive: có negative test hoặc review note.</li>
+</ul>
+</section>
+<section class="doc-section source-sol" id="sol-sol-worksheet-speed-of-light-optimization"><div class="source-label">SOL Worksheet</div><h1>SOL Worksheet - Speed Of Light Optimization</h1>
+<h2 id="sol-1-ban-chat">1. Bản Chất</h2>
+<p>SOL trong bối cảnh engineering là giới hạn lý thuyết của hệ thống dựa trên phần cứng và đường dữ liệu. Nó trả lời câu hỏi:</p>
+<div class="code-card"><div class="code-head"><span>text</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-text">&quot;Nhanh nhất có thể, về mặt vật lý, là bao nhiêu?&quot;</code></pre></div>
+<p>Không có SOL, team dễ tối ưu theo cảm giác:</p>
+<ul>
+<li>Dừng quá sớm ở mức &quot;có vẻ nhanh&quot;.</li>
+<li>Tối ưu sai tầng vì không biết bottleneck.</li>
+<li>Đòi target không thể đạt vì vượt giới hạn CPU/GPU/memory/network.</li>
+<li>Cho agent loop vô hạn mà không biết gần tới trần hay chưa.</li>
+</ul>
+<p>SOL không phải lúc nào cũng cần độ chính xác tuyệt đối. Nó là neo định hướng để biết hệ thống đang cách trần bao xa và nên tối ưu ở đâu.</p>
+<h2 id="sol-2-khi-nao-dung-sol-worksheet">2. Khi Nào Dùng SOL Worksheet</h2>
+<p>Dùng khi task liên quan:</p>
+<ul>
+<li>Database write/read throughput.</li>
+<li>Inference latency hoặc concurrency.</li>
+<li>Audio/video realtime processing.</li>
+<li>GPU kernel tuning.</li>
+<li>Network relay, streaming, WebRTC.</li>
+<li>Embedded/IoT loop có giới hạn CPU, memory, bus, GPIO, UART, I2S.</li>
+<li>Bất kỳ task nào có yêu cầu &quot;tối ưu đến gần giới hạn&quot;.</li>
+</ul>
+<p>Không cần SOL chi tiết cho task UI thường, CRUD đơn giản, hoặc bug fix không liên quan performance.</p>
+<h2 id="sol-3-ba-loai-bound-chinh">3. Ba Loại Bound Chính</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Bound</th>
+<th>Bản chất</th>
+<th>Metric thường dùng</th>
+<th>Ví dụ</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Compute-bound</td>
+<td>Nghẽn ở năng lực tính toán CPU/GPU</td>
+<td>FLOPs, ops/s, CPU%, GPU utilization</td>
+<td>Matrix multiply, DSP, ML inference</td>
+</tr>
+<tr>
+<td>I/O-bound</td>
+<td>Nghẽn ở đọc/ghi memory/disk/bus</td>
+<td>GB/s, IOPS, cache miss, disk latency</td>
+<td>Database, mmap, file processing</td>
+</tr>
+<tr>
+<td>Network-bound</td>
+<td>Nghẽn ở RTT, bandwidth, packet processing</td>
+<td>Mbps/Gbps, p95 latency, packets/s</td>
+<td>WebRTC, relay, TCP stream</td>
+</tr>
+</tbody></table></div>
+<p>Một hệ thống có thể có nhiều bound ở các pha khác nhau. Ví dụ VAD audio pipeline có thể I/O-bound ở decode, compute-bound ở inference, network-bound ở stream.</p>
+<h2 id="sol-4-phuong-phap-xac-dinh-bottleneck">4. Phương Pháp Xác Định Bottleneck</h2>
+<h3 id="sol-buoc-1-do-baseline">Bước 1. Đo baseline</h3>
+<p>Ghi lại hiện trạng trước khi tối ưu.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Mục</th>
+<th>Cần ghi</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Commit/version</td>
+<td></td>
+</tr>
+<tr>
+<td>Machine spec</td>
+<td>CPU/GPU/RAM/disk/network</td>
+</tr>
+<tr>
+<td>Input workload</td>
+<td>Size, duration, concurrency</td>
+</tr>
+<tr>
+<td>Metric chính</td>
+<td>latency, throughput, memory, CPU/GPU</td>
+</tr>
+<tr>
+<td>Command</td>
+<td>benchmark command</td>
+</tr>
+<tr>
+<td>Kết quả</td>
+<td>số liệu thô</td>
+</tr>
+</tbody></table></div>
+<h3 id="sol-buoc-2-quan-sat-tai-nguyen">Bước 2. Quan sát tài nguyên</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Dấu hiệu</th>
+<th>Khả năng bottleneck</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>CPU 95-100%, memory bandwidth thấp</td>
+<td>Compute-bound CPU</td>
+</tr>
+<tr>
+<td>GPU utilization cao, CPU thấp</td>
+<td>Compute-bound GPU</td>
+</tr>
+<tr>
+<td>CPU thấp nhưng disk/memory wait cao</td>
+<td>I/O-bound</td>
+</tr>
+<tr>
+<td>Latency tăng theo RTT/bandwidth</td>
+<td>Network-bound</td>
+</tr>
+<tr>
+<td>Lock contention spike</td>
+<td>Concurrency/synchronization bottleneck</td>
+</tr>
+<tr>
+<td>GC/memory growth</td>
+<td>Memory allocation/leak bottleneck</td>
+</tr>
+</tbody></table></div>
+<h3 id="sol-buoc-3-uoc-luong-tran-ly-thuyet">Bước 3. Ước lượng trần lý thuyết</h3>
+<p>Không cần công thức phức tạp ngay từ đầu. Bắt đầu bằng phép chia đơn giản:</p>
+<div class="code-card"><div class="code-head"><span>text</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-text">theoretical_max = hardware_capacity / work_per_unit</code></pre></div>
+<p>Ví dụ:</p>
+<ul>
+<li>Nếu mỗi request cần 10MB memory scan, memory bandwidth 50GB/s, trần I/O lý thuyết khoảng 5.000 request/s trước overhead.</li>
+<li>Nếu mỗi inference cần 2 GFLOPs, GPU có 10 TFLOPs, trần compute lý thuyết khoảng 5.000 inference/s trước overhead.</li>
+<li>Nếu mỗi audio stream cần 64kbps, network 1Gbps, trần bandwidth lý thuyết khoảng 15.625 stream trước overhead.</li>
+</ul>
+<h3 id="sol-buoc-4-tinh-gap">Bước 4. Tính gap</h3>
+<div class="code-card"><div class="code-head"><span>text</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-text">SOL efficiency = current_performance / theoretical_max</code></pre></div>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Efficiency</th>
+<th>Diễn giải</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>&lt;10%</td>
+<td>Có thể đang sai kiến trúc, overhead lớn, chưa optimize</td>
+</tr>
+<tr>
+<td>10-40%</td>
+<td>Còn nhiều dư địa, cần profiling</td>
+</tr>
+<tr>
+<td>40-70%</td>
+<td>Tối ưu đã có hiệu quả, cần tìm bottleneck cụ thể</td>
+</tr>
+<tr>
+<td>70-90%</td>
+<td>Gần trần thực tế, tối ưu tiếp khó hơn</td>
+</tr>
+<tr>
+<td>&gt;90%</td>
+<td>Có thể đã gần giới hạn hoặc estimate quá thấp</td>
+</tr>
+</tbody></table></div>
+<h2 id="sol-5-current-performance">5. Current Performance</h2>
+<p>Current performance phải được đo bằng workload đại diện, không phải demo nhỏ.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Nhóm metric</th>
+<th>Ví dụ</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Latency</td>
+<td>p50, p95, p99, max</td>
+</tr>
+<tr>
+<td>Throughput</td>
+<td>requests/s, writes/s, generations/s, channels</td>
+</tr>
+<tr>
+<td>Stability</td>
+<td>duration, crash count, memory leak</td>
+</tr>
+<tr>
+<td>Resource</td>
+<td>CPU%, GPU%, RAM, memory bandwidth, disk I/O</td>
+</tr>
+<tr>
+<td>Correctness</td>
+<td>accuracy, error rate, false positive/negative</td>
+</tr>
+</tbody></table></div>
+<p>Với performance task, correctness luôn đứng trước speed. Tối ưu làm sai kết quả không được tính là thành công.</p>
+<h2 id="sol-6-optimization-target">6. Optimization Target</h2>
+<p>Target tốt phải có 3 lớp:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Lớp</th>
+<th>Nội dung</th>
+<th>Ví dụ</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Minimum acceptable</td>
+<td>Mức đủ để business chấp nhận</td>
+<td>p95 &lt; 100ms</td>
+</tr>
+<tr>
+<td>Target</td>
+<td>Mức khóa học/task hướng tới</td>
+<td>p95 &lt; 30ms</td>
+</tr>
+<tr>
+<td>SOL ambition</td>
+<td>Mức gần giới hạn vật lý</td>
+<td>&gt;=70% theoretical throughput</td>
+</tr>
+</tbody></table></div>
+<p>Không phải task nào cũng cần đạt 90% SOL. Với hệ thống production, cân bằng maintainability, cost và correctness quan trọng hơn tối ưu cực hạn.</p>
+<h2 id="sol-7-sol-worksheet-template">7. SOL Worksheet Template</h2>
+<div class="code-card"><div class="code-head"><span>markdown</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-markdown"># SOL Worksheet
+
+## System/Task
+- Task:
+- Owner:
+- Date:
+- Commit/version:
+
+## Workload Definition
+- Input size:
+- Concurrency:
+- Duration:
+- Dataset/sample:
+- Environment:
+
+## Baseline
+| Metric | Value | Evidence |
+|---|---:|---|
+| p50 latency | | |
+| p95 latency | | |
+| Throughput | | |
+| CPU usage | | |
+| GPU usage | | |
+| Memory usage | | |
+| Error/correctness | | |
+
+## Bound Analysis
+| Bound type | Hardware capacity | Work per unit | Theoretical max | Confidence |
+|---|---:|---:|---:|---|
+| Compute | | | | low/medium/high |
+| I/O | | | | low/medium/high |
+| Network | | | | low/medium/high |
+
+## Bottleneck Hypothesis
+- Primary bottleneck:
+- Evidence:
+- Alternative bottleneck:
+- What to profile next:
+
+## Optimization Plan
+| Step | Hypothesis | Change | Expected impact | Validation |
+|---|---|---|---|---|
+| 1 | | | | |
+| 2 | | | | |
+
+## After Optimization
+| Metric | Baseline | After | Delta | Target |
+|---|---:|---:|---:|---:|
+| p95 latency | | | | |
+| Throughput | | | | |
+| CPU/GPU usage | | | | |
+| Correctness | | | | |
+
+## Decision
+- Continue optimizing | stop | redesign | escalate
+- Reason:
+- Residual risk:</code></pre></div>
+<h2 id="sol-8-vi-du-vad-realtime-30ms">8. Ví Dụ: VAD Realtime &lt;30ms</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Mục</th>
+<th>Giá trị mẫu</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Task</td>
+<td>Optimize Vietnamese VAD inference</td>
+</tr>
+<tr>
+<td>Workload</td>
+<td>16kHz mono audio, 30ms frame, noisy environment</td>
+</tr>
+<tr>
+<td>Minimum acceptable</td>
+<td>p95 latency &lt;50ms, FPR không tăng</td>
+</tr>
+<tr>
+<td>Target</td>
+<td>p95 latency &lt;30ms</td>
+</tr>
+<tr>
+<td>Bound nghi ngờ</td>
+<td>Compute-bound ở feature extraction/inference</td>
+</tr>
+<tr>
+<td>Evidence cần</td>
+<td>Dataset, latency histogram, accuracy/FPR/FNR</td>
+</tr>
+<tr>
+<td>Gate</td>
+<td>Correctness test -&gt; ONNX export -&gt; benchmark</td>
+</tr>
+</tbody></table></div>
+<p class="callout callout-good">Ví dụ decision:</p>
+<div class="code-card"><div class="code-head"><span>text</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-text">Nếu CPU p95 vẫn &gt;30ms và profiler cho thấy feature extraction chiếm &gt;60%, thử CUDA/SIMD hoặc precompute window. Nếu FPR tăng, rollback optimization dù latency đạt.</code></pre></div>
+<h2 id="sol-9-vi-du-iot-database-write-heavy">9. Ví Dụ: IoT Database Write-Heavy</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Mục</th>
+<th>Giá trị mẫu</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Task</td>
+<td>Optimize append-only IoT database</td>
+</tr>
+<tr>
+<td>Workload</td>
+<td>1M device writes/hour, rare reads</td>
+</tr>
+<tr>
+<td>Bound nghi ngờ</td>
+<td>I/O-bound + lock contention</td>
+</tr>
+<tr>
+<td>Baseline evidence</td>
+<td>write latency spike, CPU profile, lock contention</td>
+</tr>
+<tr>
+<td>Optimization</td>
+<td>mmap hot buffer, append-only layout, fine-grained RwLock</td>
+</tr>
+<tr>
+<td>Gate</td>
+<td>25h stability run, memory leak check, write latency p95</td>
+</tr>
+</tbody></table></div>
+<h2 id="sol-10-sai-lam-thuong-gap">10. Sai Lầm Thường Gặp</h2>
+<ul>
+<li>Không có baseline trước khi tối ưu.</li>
+<li>Đo benchmark bằng input quá nhỏ.</li>
+<li>Chỉ đo average latency, bỏ qua p95/p99.</li>
+<li>Không ghi machine spec.</li>
+<li>Không kiểm correctness sau tối ưu.</li>
+<li>Tưởng CPU cao luôn là compute-bound, trong khi có thể là lock contention.</li>
+<li>Chưa biết trần lý thuyết nhưng yêu cầu target phi thực tế.</li>
+</ul>
+<h2 id="sol-11-tieu-chuan-worksheet-dat">11. Tiêu Chuẩn Worksheet Đạt</h2>
+<p>Worksheet đạt chuẩn khi:</p>
+<ul>
+<li>Workload đại diện thực tế.</li>
+<li>Có baseline và evidence.</li>
+<li>Có bound analysis compute/I/O/network.</li>
+<li>Có bottleneck hypothesis rõ.</li>
+<li>Có target tối thiểu và target kỳ vọng.</li>
+<li>Có comparison before/after.</li>
+<li>Có decision tiếp tục/dừng/redesign/escalate.</li>
+</ul>
+</section>
+<section class="doc-section source-complexity" id="complexity-agent-task-complexity-matrix-ma-tran-do-phuc-tap-nhiem-vu-ai-agent"><div class="source-label">Agent Task Complexity Matrix</div><h1>Agent Task Complexity Matrix - Ma Trận Độ Phức Tạp Nhiệm Vụ AI Agent</h1>
+<h2 id="complexity-1-ban-chat">1. Bản Chất</h2>
+<p>Không phải task nào cũng phù hợp để giao AI agent ở cùng mức tự trị. Ma trận độ phức tạp giúp team quyết định:</p>
+<ul>
+<li>Task này agent có thể tự làm đến đâu?</li>
+<li>Cần con người steering ở mức nào?</li>
+<li>Gate tối thiểu là gì?</li>
+<li>Có nên chia nhỏ task trước khi giao không?</li>
+<li>Khi nào nên dừng autonomous mode?</li>
+</ul>
+<p class="callout callout-good">Nguyên tắc: <strong>mức tự trị phải tỷ lệ nghịch với độ mơ hồ và độ đặc thù domain</strong>.</p>
+<p>Task càng phổ biến, có nhiều tài liệu, có test rõ, interface chuẩn thì agent càng tự trị được. Task càng custom, ít tài liệu, phụ thuộc business logic, hardware, ML data hoặc kiến trúc lớn thì cần steering chặt hơn.</p>
+<h2 id="complexity-2-hai-truc-danh-gia">2. Hai Trục Đánh Giá</h2>
+<h3 id="complexity-2-1-do-pho-bien-cua-nhiem-vu">2.1 Độ phổ biến của nhiệm vụ</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Mức</th>
+<th>Mô tả</th>
+<th>Ví dụ</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Mainstream</td>
+<td>Có nhiều pattern, docs, example online</td>
+<td>CRUD, form UI, REST endpoint, standard auth flow</td>
+</tr>
+<tr>
+<td>Semi-custom</td>
+<td>Có framework phổ biến nhưng business rule riêng</td>
+<td>Billing rule, data sync, internal workflow</td>
+</tr>
+<tr>
+<td>Custom/domain</td>
+<td>Ít tài liệu, phụ thuộc hệ thống riêng</td>
+<td>Custom IoT DB, VAD tiếng Việt, hardware board</td>
+</tr>
+<tr>
+<td>Novel/research</td>
+<td>Chưa rõ giải pháp, cần thử nghiệm</td>
+<td>New ML architecture, GPU kernel tuning, protocol design</td>
+</tr>
+</tbody></table></div>
+<h3 id="complexity-2-2-do-rui-ro-thay-doi">2.2 Độ rủi ro thay đổi</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Mức</th>
+<th>Mô tả</th>
+<th>Ví dụ</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Low</td>
+<td>Sửa cục bộ, dễ rollback</td>
+<td>Text, style, small utility</td>
+</tr>
+<tr>
+<td>Medium</td>
+<td>Chạm logic hoặc nhiều component</td>
+<td>API, data transform, UI flow</td>
+</tr>
+<tr>
+<td>High</td>
+<td>Chạm production path, auth, data, performance</td>
+<td>Payment, permission, DB migration</td>
+</tr>
+<tr>
+<td>Critical</td>
+<td>Có thể ảnh hưởng an toàn, dữ liệu, khách hàng lớn</td>
+<td>Security, embedded hardware, realtime inference</td>
+</tr>
+</tbody></table></div>
+<h2 id="complexity-3-ma-tran-chinh">3. Ma Trận Chính</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Loại task</th>
+<th>Ví dụ</th>
+<th>Required steering</th>
+<th>Acceptable autonomy level</th>
+<th>Gate tối thiểu</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Mainstream/simple</td>
+<td>UI form, CRUD endpoint, docs update</td>
+<td>Goal + scope + command</td>
+<td>High autonomous</td>
+<td>Build, lint, unit test</td>
+</tr>
+<tr>
+<td>Mainstream/edge</td>
+<td>Auth callback, file upload, concurrency bug</td>
+<td>Spec + negative cases + reviewer</td>
+<td>Medium autonomous</td>
+<td>Integration, security, edge test</td>
+</tr>
+<tr>
+<td>Semi-custom/business</td>
+<td>Pricing rule, approval workflow, report logic</td>
+<td>Business examples + acceptance cases</td>
+<td>Assisted</td>
+<td>Unit + integration + business scenario</td>
+</tr>
+<tr>
+<td>Custom/codebase-specific</td>
+<td>Internal SDK, legacy refactor, custom protocol</td>
+<td>Architecture note + interface skeleton</td>
+<td>Assisted/low autonomous</td>
+<td>Module test + regression suite</td>
+</tr>
+<tr>
+<td>Hardware/embedded</td>
+<td>ESP32 board, UART/I2S/GPIO</td>
+<td>Pin map, physical setup, logs</td>
+<td>Low autonomous</td>
+<td>Build + hardware evidence</td>
+</tr>
+<tr>
+<td>ML/audio</td>
+<td>VAD, speaker detection, ONNX export</td>
+<td>Dataset, metric, latency target</td>
+<td>Assisted</td>
+<td>Accuracy + latency + export gate</td>
+</tr>
+<tr>
+<td>Performance/SOL</td>
+<td>DB tuning, GPU kernel, relay throughput</td>
+<td>Baseline, profiler, target, SOL worksheet</td>
+<td>Assisted</td>
+<td>Correctness + benchmark + stability</td>
+</tr>
+<tr>
+<td>Architecture-wide</td>
+<td>Split service, redesign pipeline</td>
+<td>Human architecture first</td>
+<td>Low autonomous</td>
+<td>Phase gates per module</td>
+</tr>
+<tr>
+<td>Security-sensitive</td>
+<td>Auth, secrets, permissions, upload</td>
+<td>Threat model + negative tests</td>
+<td>Low autonomous</td>
+<td>Security review + abuse cases</td>
+</tr>
+<tr>
+<td>Research/unknown</td>
+<td>No clear solution yet</td>
+<td>Human-in-the-loop research</td>
+<td>Manual-assisted</td>
+<td>Experiment log + decision review</td>
+</tr>
+</tbody></table></div>
+<h2 id="complexity-4-cap-do-tu-tri">4. Cấp Độ Tự Trị</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Level</th>
+<th>Tên</th>
+<th>Mô tả</th>
+<th>Khi dùng</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>L0</td>
+<td>Human only</td>
+<td>Con người tự làm, agent chỉ tham khảo</td>
+<td>Rủi ro cao, spec chưa rõ</td>
+</tr>
+<tr>
+<td>L1</td>
+<td>Suggestion</td>
+<td>Agent phân tích/đề xuất, không sửa file</td>
+<td>Research, design review</td>
+</tr>
+<tr>
+<td>L2</td>
+<td>Assisted edit</td>
+<td>Agent sửa nhưng human steer liên tục</td>
+<td>Semi-custom, thiếu test</td>
+</tr>
+<tr>
+<td>L3</td>
+<td>Bounded autonomous</td>
+<td>Agent tự chạy trong scope/gate rõ</td>
+<td>Mainstream hoặc module hẹp</td>
+</tr>
+<tr>
+<td>L4</td>
+<td>Goal-driven loop</td>
+<td>Agent tự fix/test nhiều vòng trong sandbox</td>
+<td>Task có test/gate mạnh</td>
+</tr>
+<tr>
+<td>L5</td>
+<td>Production autonomous</td>
+<td>Agent tự tạo PR pass CI nhưng vẫn human merge</td>
+<td>Chỉ khi governance rất trưởng thành</td>
+</tr>
+</tbody></table></div>
+<p>Khuyến nghị cho đa số team: bắt đầu L2-L3, chỉ lên L4 khi gate đã ổn định.</p>
+<h2 id="complexity-5-required-steering">5. Required Steering</h2>
+<p>Steering là thông tin định hướng giúp agent không đoán.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Loại steering</th>
+<th>Khi cần</th>
+<th>Ví dụ</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Spec steering</td>
+<td>Behavior cần đúng</td>
+<td>API contract, acceptance criteria</td>
+</tr>
+<tr>
+<td>Scope steering</td>
+<td>Ngăn sửa lan</td>
+<td>allowed/forbidden files</td>
+</tr>
+<tr>
+<td>Architecture steering</td>
+<td>Ngăn agent tự thiết kế rộng</td>
+<td>skeleton interface, module map</td>
+</tr>
+<tr>
+<td>Domain steering</td>
+<td>Domain hiếm</td>
+<td>hardware pin, audio sample, protocol docs</td>
+</tr>
+<tr>
+<td>Metric steering</td>
+<td>Performance/ML</td>
+<td>latency target, accuracy, throughput</td>
+</tr>
+<tr>
+<td>Failure steering</td>
+<td>Khi agent lặp lỗi</td>
+<td>logs, profiler, docs, exact error</td>
+</tr>
+<tr>
+<td>Safety steering</td>
+<td>Security/data</td>
+<td>threat note, permission model</td>
+</tr>
+</tbody></table></div>
+<p>Nếu task cần nhiều loại steering mà chưa có, không nên chạy autonomous.</p>
+<h2 id="complexity-6-cach-cham-diem-task">6. Cách Chấm Điểm Task</h2>
+<p class="callout callout-warn">Chấm mỗi tiêu chí 1-5 điểm. Điểm càng cao càng rủi ro/mơ hồ.</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Tiêu chí</th>
+<th>1 điểm</th>
+<th>3 điểm</th>
+<th>5 điểm</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Domain familiarity</td>
+<td>Rất phổ biến</td>
+<td>Có phần custom</td>
+<td>Hiếm/không có docs</td>
+</tr>
+<tr>
+<td>Scope clarity</td>
+<td>Rõ file/module</td>
+<td>Rõ feature nhưng rộng</td>
+<td>Mơ hồ/toàn hệ thống</td>
+</tr>
+<tr>
+<td>Test availability</td>
+<td>Test tốt</td>
+<td>Có test thiếu coverage</td>
+<td>Không có test</td>
+</tr>
+<tr>
+<td>Blast radius</td>
+<td>Cục bộ</td>
+<td>Nhiều module</td>
+<td>Production-critical</td>
+</tr>
+<tr>
+<td>Data/hardware dependency</td>
+<td>Không</td>
+<td>Có mock</td>
+<td>Cần dữ liệu/hardware thật</td>
+</tr>
+<tr>
+<td>Performance sensitivity</td>
+<td>Không</td>
+<td>Có target mềm</td>
+<td>Có SLA/SOL</td>
+</tr>
+<tr>
+<td>Security sensitivity</td>
+<td>Không</td>
+<td>Có user data</td>
+<td>Auth/secret/permission</td>
+</tr>
+</tbody></table></div>
+<h3 id="complexity-dien-giai-tong-diem">Diễn giải tổng điểm</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Tổng điểm</th>
+<th>Mức</th>
+<th>Khuyến nghị</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>7-14</td>
+<td>Low complexity</td>
+<td>L3-L4 được nếu có gate</td>
+</tr>
+<tr>
+<td>15-22</td>
+<td>Medium</td>
+<td>L2-L3, reviewer chặt</td>
+</tr>
+<tr>
+<td>23-30</td>
+<td>High</td>
+<td>L1-L2, cần chia nhỏ và thêm spec</td>
+</tr>
+<tr>
+<td>31-35</td>
+<td>Critical</td>
+<td>Không autonomous; human design trước</td>
+</tr>
+</tbody></table></div>
+<h2 id="complexity-7-template-matrix">7. Template Matrix</h2>
+<div class="code-card"><div class="code-head"><span>markdown</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-markdown"># Agent Task Complexity Assessment
+
+## Task
+- Name:
+- Owner:
+- Repo/module:
+- Business/engineering value:
+
+## Classification
+| Dimension | Score 1-5 | Notes |
+|---|---:|---|
+| Domain familiarity | | |
+| Scope clarity | | |
+| Test availability | | |
+| Blast radius | | |
+| Data/hardware dependency | | |
+| Performance sensitivity | | |
+| Security sensitivity | | |
+| Total | | |
+
+## Decision
+- Task type:
+- Recommended autonomy level: L0/L1/L2/L3/L4/L5
+- Required steering:
+- Required gates:
+- Must split before execution: yes/no
+
+## Steering Package Needed
+- Spec:
+- Scope:
+- Architecture skeleton:
+- Domain docs/data:
+- Metrics:
+- Safety constraints:
+
+## Stop Conditions
+- Stop if:
+- Ask human if:
+- Do not change:</code></pre></div>
+<h2 id="complexity-8-vi-du-cham-diem">8. Ví Dụ Chấm Điểm</h2>
+<h3 id="complexity-vi-du-1-them-form-ui-don-gian">Ví dụ 1: Thêm form UI đơn giản</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Tiêu chí</th>
+<th>Điểm</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Domain familiarity</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Scope clarity</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Test availability</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Blast radius</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Data/hardware dependency</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Performance sensitivity</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Security sensitivity</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Tổng</td>
+<td>8</td>
+</tr>
+</tbody></table></div>
+<p>Khuyến nghị: L3 bounded autonomous. Gate: build, lint, component test, screenshot.</p>
+<h3 id="complexity-vi-du-2-optimize-vad-tieng-viet-30ms">Ví dụ 2: Optimize VAD tiếng Việt &lt;30ms</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Tiêu chí</th>
+<th>Điểm</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Domain familiarity</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Scope clarity</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Test availability</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Blast radius</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Data/hardware dependency</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Performance sensitivity</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Security sensitivity</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Tổng</td>
+<td>25</td>
+</tr>
+</tbody></table></div>
+<p>Khuyến nghị: L2 assisted. Cần dataset, metric latency/accuracy, SOL worksheet, benchmark gate.</p>
+<h3 id="complexity-vi-du-3-refactor-auth-permission-model">Ví dụ 3: Refactor auth permission model</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Tiêu chí</th>
+<th>Điểm</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Domain familiarity</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Scope clarity</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Test availability</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Blast radius</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Data/hardware dependency</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Performance sensitivity</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Security sensitivity</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Tổng</td>
+<td>24</td>
+</tr>
+</tbody></table></div>
+<p>Khuyến nghị: L1-L2. Human phải thiết kế permission model và abuse cases trước; agent chỉ làm module nhỏ.</p>
+<h2 id="complexity-9-sai-lam-khi-phan-loai">9. Sai Lầm Khi Phân Loại</h2>
+<ul>
+<li>Thấy task quen thuộc nên bỏ qua edge case security.</li>
+<li>Thấy agent làm nhanh nên tăng autonomy quá sớm.</li>
+<li>Không tính blast radius.</li>
+<li>Không phân biệt &quot;có test&quot; và &quot;test đủ kiểm behavior&quot;.</li>
+<li>Không hạ autonomy khi task phụ thuộc dữ liệu/hardware thật.</li>
+<li>Giao architecture-wide task khi chưa có skeleton.</li>
+</ul>
+<h2 id="complexity-10-tieu-chuan-quyet-dinh-tot">10. Tiêu Chuẩn Quyết Định Tốt</h2>
+<p>Một quyết định phân loại task tốt phải nêu rõ:</p>
+<ul>
+<li>Task thuộc loại nào.</li>
+<li>Vì sao mức autonomy được chọn là phù hợp.</li>
+<li>Steering package nào cần chuẩn bị trước.</li>
+<li>Gate nào bắt buộc.</li>
+<li>Khi nào phải dừng hoặc hỏi người.</li>
+</ul>
+</section>
+<section class="doc-section source-manager" id="manager-manager-follow-up-form-theo-doi-ap-dung-ai-agent-sau-dao-tao"><div class="source-label">Manager Follow-up Form</div><h1>Manager Follow-up Form - Theo Dõi Áp Dụng AI Agent Sau Đào Tạo</h1>
+<h2 id="manager-1-ban-chat">1. Bản Chất</h2>
+<p>Đào tạo AI agent không kết thúc khi học viên hiểu khái niệm. Năng lực thật chỉ xuất hiện khi team thay đổi hành vi trong công việc:</p>
+<ul>
+<li>Có dùng <code>GOAL.md</code> trước khi giao task cho agent không?</li>
+<li>Có chạy QA gate không?</li>
+<li>Có evidence để review không?</li>
+<li>Có giảm lead time mà không tăng defect không?</li>
+<li>Có biết khi nào phải dừng agent và steering lại không?</li>
+</ul>
+<p class="callout callout-good">Manager Follow-up Form là công cụ biến đào tạo thành vận hành. Nó giúp manager theo dõi evidence, KPI, blocker và quyết định tiếp theo trong 30-60-90 ngày.</p>
+<h2 id="manager-2-vai-tro-cua-manager">2. Vai Trò Của Manager</h2>
+<p>Manager không cần micro-manage prompt hoặc từng dòng code. Manager cần quản trị 5 việc:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Vai trò</th>
+<th>Câu hỏi manager cần hỏi</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Chọn pilot</td>
+<td>Task nào đủ giá trị nhưng không quá rủi ro?</td>
+</tr>
+<tr>
+<td>Bắt buộc evidence</td>
+<td>Task này có goal, gate và evidence không?</td>
+</tr>
+<tr>
+<td>Theo dõi KPI</td>
+<td>Tốc độ tăng có làm chất lượng giảm không?</td>
+</tr>
+<tr>
+<td>Gỡ blocker</td>
+<td>Team thiếu spec, test, data, quyền tool hay reviewer?</td>
+</tr>
+<tr>
+<td>Ra quyết định</td>
+<td>Scale, steer, stop hay redesign workflow?</td>
+</tr>
+</tbody></table></div>
+<h2 id="manager-3-evidence-can-theo-doi">3. Evidence Cần Theo Dõi</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Evidence</th>
+<th>Mục đích</th>
+<th>Ví dụ</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Goal contract</td>
+<td>Chứng minh task có boundary</td>
+<td><code>GOAL.md</code></td>
+</tr>
+<tr>
+<td>Workflow log</td>
+<td>Chứng minh role/handoff rõ</td>
+<td>Planner/engineer/reviewer notes</td>
+</tr>
+<tr>
+<td>Test output</td>
+<td>Chứng minh correctness</td>
+<td>CI log, local test output</td>
+</tr>
+<tr>
+<td>Visual evidence</td>
+<td>Chứng minh UI/PDF không vỡ</td>
+<td>Screenshot desktop/mobile</td>
+</tr>
+<tr>
+<td>Benchmark</td>
+<td>Chứng minh performance</td>
+<td>before/after latency/throughput</td>
+</tr>
+<tr>
+<td>Review report</td>
+<td>Chứng minh review độc lập</td>
+<td>pass/fail report</td>
+</tr>
+<tr>
+<td>Decision record</td>
+<td>Chứng minh manager đã ra quyết định</td>
+<td>merge/steer/stop note</td>
+</tr>
+</tbody></table></div>
+<p class="callout callout-good">Evidence không cần dài, nhưng phải đủ để một người ngoài task hiểu vì sao output được chấp nhận.</p>
+<h2 id="manager-4-kpi-can-theo-doi">4. KPI Cần Theo Dõi</h2>
+<h3 id="manager-4-1-kpi-hanh-vi">4.1 KPI Hành Vi</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>KPI</th>
+<th>Cách đo</th>
+<th>Target 30 ngày</th>
+<th>Target 60 ngày</th>
+<th>Target 90 ngày</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Task AI có <code>GOAL.md</code></td>
+<td>Số task có goal / tổng task AI</td>
+<td>50%</td>
+<td>70%</td>
+<td>85%</td>
+</tr>
+<tr>
+<td>Task AI có evidence</td>
+<td>Số task có evidence / tổng task AI</td>
+<td>50%</td>
+<td>70%</td>
+<td>85%</td>
+</tr>
+<tr>
+<td>Review gate được chạy</td>
+<td>Số task pass gate / tổng task cần gate</td>
+<td>40%</td>
+<td>70%</td>
+<td>80%</td>
+</tr>
+<tr>
+<td>Pilot hoàn tất</td>
+<td>Số pilot pass DoD</td>
+<td>1/team</td>
+<td>2/team</td>
+<td>3+/team</td>
+</tr>
+</tbody></table></div>
+<h3 id="manager-4-2-kpi-ket-qua">4.2 KPI Kết Quả</h3>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>KPI</th>
+<th>Ý nghĩa</th>
+<th>Cảnh báo</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Lead time</td>
+<td>Tốc độ hoàn thành task</td>
+<td>Giảm nhưng defect tăng là không đạt</td>
+</tr>
+<tr>
+<td>Defect rate</td>
+<td>Chất lượng output</td>
+<td>Tăng sau khi dùng agent là phải siết gate</td>
+</tr>
+<tr>
+<td>Rework rate</td>
+<td>Mức sửa lại sau review</td>
+<td>Cao nghĩa là goal/gate yếu</td>
+</tr>
+<tr>
+<td>Cycle count</td>
+<td>Số vòng agent tự sửa</td>
+<td>Quá cao nghĩa là thiếu spec hoặc agent đang guessing</td>
+</tr>
+<tr>
+<td>Throughput</td>
+<td>Số task hoàn tất/sprint</td>
+<td>Chỉ tốt nếu quality ổn định</td>
+</tr>
+<tr>
+<td>Template reuse</td>
+<td>Mức chuẩn hóa</td>
+<td>Thấp nghĩa là mỗi người tự prompt</td>
+</tr>
+</tbody></table></div>
+<h2 id="manager-5-blocker-thuong-gap">5. Blocker Thường Gặp</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Blocker</th>
+<th>Dấu hiệu</th>
+<th>Hành động của manager</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Thiếu test</td>
+<td>Reviewer không có gì để kiểm</td>
+<td>Ưu tiên viết test/gate trước task agent</td>
+</tr>
+<tr>
+<td>Task quá rộng</td>
+<td>Agent sửa lan, review khó</td>
+<td>Chia module, giảm autonomy</td>
+</tr>
+<tr>
+<td>Thiếu domain context</td>
+<td>Agent hallucinate logic</td>
+<td>Bổ sung docs, examples, data, owner</td>
+</tr>
+<tr>
+<td>Thiếu reviewer</td>
+<td>Task pass bằng lời agent</td>
+<td>Phân công reviewer độc lập</td>
+</tr>
+<tr>
+<td>Thiếu benchmark</td>
+<td>Performance không chứng minh được</td>
+<td>Chuẩn hóa benchmark command</td>
+</tr>
+<tr>
+<td>Security risk</td>
+<td>Chạm auth/data không có review</td>
+<td>Bắt buộc security gate</td>
+</tr>
+<tr>
+<td>Không có time follow-up</td>
+<td>Sau khóa học không đổi hành vi</td>
+<td>Lên lịch review cố định</td>
+</tr>
+</tbody></table></div>
+<h2 id="manager-6-next-steering-decision">6. Next Steering Decision</h2>
+<p>Sau mỗi follow-up, manager phải chọn một quyết định rõ:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Quyết định</th>
+<th>Khi nào chọn</th>
+<th>Hành động</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Continue</td>
+<td>Pilot pass, KPI ổn</td>
+<td>Tiếp tục thêm task tương tự</td>
+</tr>
+<tr>
+<td>Scale</td>
+<td>Nhiều pilot pass, template ổn</td>
+<td>Mở rộng sang team/workflow khác</td>
+</tr>
+<tr>
+<td>Steer</td>
+<td>Output gần đạt nhưng còn blocker</td>
+<td>Bổ sung spec/gate/context</td>
+</tr>
+<tr>
+<td>Reduce autonomy</td>
+<td>Agent sửa lan hoặc fail nhiều</td>
+<td>Hạ từ L3/L4 xuống L2</td>
+</tr>
+<tr>
+<td>Stop</td>
+<td>Rủi ro cao, defect tăng</td>
+<td>Dừng pilot, review lại design</td>
+</tr>
+<tr>
+<td>Redesign</td>
+<td>Workflow/gate sai bản chất</td>
+<td>Thiết kế lại contract/pipeline</td>
+</tr>
+</tbody></table></div>
+<h2 id="manager-7-weekly-follow-up-form">7. Weekly Follow-up Form</h2>
+<div class="code-card"><div class="code-head"><span>markdown</span><button class="copy-code" type="button">Sao chép</button></div><pre><code class="language-markdown"># AI Agent Follow-up Form
+
+## Basic Info
+- Team:
+- Manager:
+- Week:
+- Pilot/task:
+- Owner:
+
+## Goal &amp; Scope
+- Goal link:
+- Task type:
+- Autonomy level:
+- Allowed scope:
+- Reviewer:
+
+## Evidence
+| Evidence type | Link/path | Status | Notes |
+|---|---|---|---|
+| GOAL.md | | present/missing | |
+| Workflow log | | present/missing | |
+| Test output | | pass/fail/missing | |
+| Visual evidence | | pass/fail/not-needed | |
+| Benchmark | | pass/fail/not-needed | |
+| Security check | | pass/fail/not-needed | |
+| Review report | | pass/fail/missing | |
+
+## KPI
+| KPI | Baseline | Current | Target | Status |
+|---|---:|---:|---:|---|
+| Lead time | | | | |
+| Defect count | | | | |
+| Rework count | | | | |
+| Agent cycle count | | | | |
+| Test pass rate | | | | |
+| Template reuse | | | | |
+
+## Blockers
+- Blocker 1:
+- Blocker 2:
+- Support needed:
+
+## Manager Decision
+- Decision: continue | scale | steer | reduce-autonomy | stop | redesign
+- Reason:
+- Next action:
+- Owner:
+- Due date:
+
+## Lessons Learned
+- What worked:
+- What failed:
+- Template/gate update needed:</code></pre></div>
+<h2 id="manager-8-30-60-90-follow-up-cadence">8. 30-60-90 Follow-up Cadence</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Giai đoạn</th>
+<th>Mục tiêu manager</th>
+<th>Câu hỏi trọng tâm</th>
+<th>Output</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>0-30 ngày</td>
+<td>Có pilot thật</td>
+<td>Team có dùng goal/gate/evidence không?</td>
+<td>1 pilot report</td>
+</tr>
+<tr>
+<td>31-60 ngày</td>
+<td>Chuẩn hóa hành vi</td>
+<td>Template nào được reuse? Gate nào thiếu?</td>
+<td>Team template pack</td>
+</tr>
+<tr>
+<td>61-90 ngày</td>
+<td>Đo kết quả business</td>
+<td>Lead time/defect/rework thay đổi thế nào?</td>
+<td>Adoption decision</td>
+</tr>
+</tbody></table></div>
+<h2 id="manager-9-mau-review-30-phut-hang-tuan">9. Mẫu Review 30 Phút Hàng Tuần</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Thời lượng</th>
+<th>Nội dung</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>5&#x27;</td>
+<td>Nhắc lại pilot goal và KPI</td>
+</tr>
+<tr>
+<td>10&#x27;</td>
+<td>Xem evidence: goal, gate, test, review</td>
+</tr>
+<tr>
+<td>5&#x27;</td>
+<td>Xem blocker và cycle count</td>
+</tr>
+<tr>
+<td>5&#x27;</td>
+<td>Chọn decision: continue/steer/stop</td>
+</tr>
+<tr>
+<td>5&#x27;</td>
+<td>Chốt next action, owner, due date</td>
+</tr>
+</tbody></table></div>
+<p class="callout callout-good">Manager nên yêu cầu evidence trước cuộc họp. Không dùng 30 phút để nghe kể lại toàn bộ quá trình.</p>
+<h2 id="manager-10-dau-hieu-adoption-dung">10. Dấu Hiệu Adoption Đúng</h2>
+<ul>
+<li>Học viên tự viết goal trước khi prompt agent.</li>
+<li>Reviewer hỏi evidence thay vì hỏi &quot;agent nói gì&quot;.</li>
+<li>Task lớn được chia module trước khi giao.</li>
+<li>Manager nhìn dashboard KPI, không chỉ nghe cảm nhận.</li>
+<li>Team reuse template thay vì mỗi người tự chế prompt.</li>
+<li>Agent được dùng nhiều hơn ở task phù hợp, ít hơn ở task rủi ro.</li>
+</ul>
+<h2 id="manager-11-dau-hieu-can-can-thiep">11. Dấu Hiệu Cần Can Thiệp</h2>
+<ul>
+<li>Lead time giảm nhưng bug tăng.</li>
+<li>Agent cycle count cao bất thường.</li>
+<li>Nhiều task không có goal/evidence.</li>
+<li>Reviewer bị bỏ qua vì &quot;agent đã test rồi&quot;.</li>
+<li>Task security/performance không có gate riêng.</li>
+<li>Team dùng AI nhiều nhưng không có template reuse.</li>
+</ul>
+<h2 id="manager-12-manager-scorecard">12. Manager Scorecard</h2>
+<div class="table-wrap"><table>
+<thead><tr>
+<th>Tiêu chí</th>
+<th>0 điểm</th>
+<th>1 điểm</th>
+<th>2 điểm</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Pilot</td>
+<td>Không có</td>
+<td>Có nhưng mơ hồ</td>
+<td>Có goal/gate/evidence</td>
+</tr>
+<tr>
+<td>Evidence</td>
+<td>Không lưu</td>
+<td>Lưu rời rạc</td>
+<td>Lưu đủ để audit</td>
+</tr>
+<tr>
+<td>KPI</td>
+<td>Không đo</td>
+<td>Đo activity</td>
+<td>Đo behavior/result</td>
+</tr>
+<tr>
+<td>Follow-up</td>
+<td>Không có lịch</td>
+<td>Có nhưng không đều</td>
+<td>Đều và có decision</td>
+</tr>
+<tr>
+<td>Template reuse</td>
+<td>Không có</td>
+<td>Cá nhân dùng</td>
+<td>Team dùng chung</td>
+</tr>
+</tbody></table></div>
+<p>Tổng 0-4: adoption yếu. Tổng 5-7: đang hình thành. Tổng 8-10: có thể scale.</p>
+</section>
+    </article>
+  </main>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Về đầu trang">↑</button>
+  <script src="app.js"></script>
+</body>
+</html>
